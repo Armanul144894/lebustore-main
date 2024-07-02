@@ -1,0 +1,2858 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lebustore</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.ico.png"
+    />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <script
+      src="https://kit.fontawesome.com/e09dd379d2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <section class="header-section">
+      <!-- Start Top Nav -->
+      <nav
+        class="navbar navbar-expand-lg bg-white navbar-light d-none d-lg-block"
+        id="lebustore_nav_top"
+      >
+        <div class="container text-light">
+          <div class="w-100 d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-center">
+              <a
+                class="navbar-brand text-success logo align-self-center"
+                href="home.html"
+              >
+                <img src="assets/img/logo-v1.png" class="" alt="" />
+              </a>
+
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Categories</option>
+                <option value="Mens">Mens</option>
+                <option value="Womens">Womens</option>
+                <option value="Other">Others</option>
+              </select>
+            </div>
+            <div class="d-flex justify-content-center align-items-center gap-4">
+              <a
+                class="text-dark text-decoration-none justify-content-center align-items-center d-flex gap-2 fs-6"
+                href="#"
+                target=""
+                rel="sponsored"
+                ><i class="fa-regular fa-heart fs-3"></i>My Wishlist</a
+              >
+              <a
+                class="text-dark text-decoration-none justify-content-center align-items-center d-flex gap-2 fs-6"
+                href="#"
+                target=""
+                rel="sponsored"
+                ><img src="assets/img/icon/ICon.png" class="" alt="" />Gift
+                Box</a
+              >
+              <a
+                class="text-dark text-decoration-none justify-content-center align-items-center d-flex gap-2 fs-6"
+                href="#"
+                target=""
+                rel="sponsored "
+                ><div class="position-relative">
+                  <img src="assets/img/icon/Icon2.png" class="" alt="" />
+                  <span class="cart-badge">1</span>
+                </div>
+
+                My Cart
+              </a>
+
+              <div class="dropdown">
+                <button
+                  class="btn btn-success dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-user"></i> User
+                </button>
+                <ul
+                  class="user-dropdown dropdown-menu"
+                  aria-labelledby="dropdownMenuButton1"
+                >
+                  <li>
+                    <div class="dropdown-item d-flex gap-3">
+                      <div>
+                        <img
+                          src="assets/img/AboutUs/Image3.png"
+                          class="rounded-circle img-thumbnail"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <h5 class="m-0">@user</h5>
+                        <p class="m-0 py-1" style="font-size: 16px !important">
+                          Md Nazvi Islam
+                        </p>
+                        <button class="btn btn-success rounded-pill px-4">
+                          Edit Profile
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <hr />
+                  <li>
+                    <a class="dropdown-item" href="account.html"
+                      ><i class="fas fa-user me-2"></i> Account</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="my-coupons.html"
+                      ><i class="fa-solid fa-money-bill me-2"></i> My Coupons</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-gift me-2"></i> My Giftcards</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-gift me-2"></i> My Offers</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="subscription.html"
+                      ><i class="fa-regular fa-credit-card me-2"></i>
+                      Subscription</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-regular fa-heart me-2"></i>My Wishlist</a
+                    >
+                  </li>
+                  <hr />
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-gear me-2"></i>Preferences</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-power-off me-2"></i>Login</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Close Top Nav -->
+      <!-- Header -->
+      <nav style="background-color: #3b4837" class="navbar navbar-expand-lg">
+        <div class="container d-flex align-items-center">
+          <a
+            class="navbar-brand text-success logo align-self-center d-block d-lg-none"
+            href="home.html"
+          >
+            <img
+              src="assets/img/lebustore-white-logo.png"
+              class="img-fluid"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#lebustore_main_nav"
+            aria-controls="lebustore_main_nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars text-white"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="lebustore_main_nav">
+            <ul
+              class="navbar-nav mr-auto w-100 justify-content-start align-items-lg-center gap-md-0 gap-xl-4"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" href="home.html">Discounts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Coupons</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Offers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Partners</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+              </li>
+              <li class="nav-item d-block d-lg-none">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-success dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fas fa-user"></i> User
+                  </button>
+                  <ul
+                    class="user-dropdown dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <div class="dropdown-item d-flex gap-3">
+                        <div>
+                          <img
+                            src="assets/img/AboutUs/Image3.png"
+                            class="rounded-circle img-thumbnail"
+                            alt=""
+                          />
+                        </div>
+                        <div class="user-info">
+                          <h5 class="m-0">@user</h5>
+                          <p
+                            class="m-0 py-1"
+                            style="font-size: 16px !important"
+                          >
+                            Md Nazvi Islam
+                          </p>
+                          <button class="btn btn-success rounded-pill px-4">
+                            Edit Profile
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                    <hr />
+                    <li>
+                      <a class="dropdown-item" href="account.html"
+                        ><i class="fas fa-user me-2"></i> Account</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="my-coupons.html"
+                        ><i class="fa-solid fa-money-bill me-2"></i> My
+                        Coupons</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="fas fa-gift me-2"></i> My Giftcards</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="fas fa-gift me-2"></i> My Offers</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="subscription.html"
+                        ><i class="fa-regular fa-credit-card me-2"></i>
+                        Subscription</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="fa-regular fa-heart me-2"></i>My Wishlist</a
+                      >
+                    </li>
+                    <hr />
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="fa-solid fa-gear me-2"></i>Preferences</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="fa-solid fa-power-off me-2"></i>Login</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Close Header -->
+    </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade bg-white"
+      id="lebustore_search"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="w-100 pt-1 mb-5 text-right">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <form
+          action=""
+          method="get"
+          class="modal-content modal-body border-0 p-0"
+        >
+          <div class="input-group mb-2">
+            <input
+              type="text"
+              class="form-control"
+              id="inputModalSearch"
+              name="q"
+              placeholder="Search ..."
+            />
+            <button
+              type="submit"
+              class="input-group-text bg-success text-light"
+            >
+              <i class="fa fa-fw fa-search text-white"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Banner Start  -->
+
+    <section>
+      <div
+        id="Lebustore-hero-carousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-bs-target="#Lebustore-hero-carousel"
+            data-bs-slide-to="0"
+            class="active"
+          >
+            1
+          </li>
+          <li data-bs-target="#Lebustore-hero-carousel" data-bs-slide-to="1">
+            2
+          </li>
+          <li data-bs-target="#Lebustore-hero-carousel" data-bs-slide-to="2">
+            3
+          </li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="">
+              <div class="card bg-dark text-white border-0">
+                <img
+                  src="assets/img/banner/discount-banner-bg.png"
+                  class="card-img img-fluid"
+                  alt="..."
+                />
+                <div
+                  class="card-img-overlay d-flex justify-content-center align-items-center container"
+                >
+                  <div class="text-center py-5">
+                    <h1 class="card-title text-white h1">
+                      Search Best Coupon Deals
+                    </h1>
+
+                    <div
+                      style="background-color: rgba(0, 0, 0, 0.7)"
+                      class="px-5 py-md-1 py-lg-2 rounded-pill mt-md-5"
+                    >
+                      <div class="row align-items-center">
+                        <div
+                          class="select-section border-end col-4 border-light"
+                        >
+                          <div class="select">
+                            <span class="select__flag"></span>
+                            <select
+                              class="select__input"
+                              name="country-selector"
+                              id="country-selector"
+                            >
+                              <option value="CA">Canada</option>
+                              <option value="SG">Singapore</option>
+                              <option value="UK">UK</option>
+                              <option value="UAE">UAE</option>
+                            </select>
+
+                            <svg class="select__arrow" viewBox="0 0 16 16">
+                              <polyline
+                                points="3.5,6.5 8,11 12.5,6.5"
+                                stroke-width="2"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></polyline>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="col-8">
+                          <div class="">
+                            <div
+                              class="d-flex align-items-center justify-content-between gap-3"
+                            >
+                              <div class="input-group-prepend w-100">
+                                <span class="d-flex gap-2 align-items-center">
+                                  <i class="fas fa-search"></i>
+                                  <input
+                                    type="text"
+                                    class="form-control border-0 search-field"
+                                    placeholder="Search Discounts & Coupons "
+                                  />
+                                </span>
+                              </div>
+
+                              <div class="input-group-append">
+                                <i
+                                  class="fa-solid fa-arrow-right-long text-success fs-3"
+                                ></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="">
+              <div class="card bg-dark text-white border-0">
+                <img
+                  src="assets/img/banner/home-banner-2.jpg"
+                  class="card-img img-fluid"
+                  alt="..."
+                />
+                <div
+                  class="card-img-overlay d-flex justify-content-center align-items-center container"
+                >
+                  <div class="text-center py-5">
+                    <h1 class="card-title text-white h1">
+                      Search Best Coupon Deals
+                    </h1>
+
+                    <div
+                      style="background-color: rgba(0, 0, 0, 0.7)"
+                      class="px-5 py-md-1 py-lg-2 rounded-pill mt-md-5"
+                    >
+                      <div class="row align-items-center">
+                        <div
+                          class="select-section border-end col-4 border-light"
+                        >
+                          <div class="select">
+                            <span class="select__flag"></span>
+                            <select
+                              class="select__input"
+                              name="country-selector"
+                              id="country-selector"
+                            >
+                              <option value="CA">Canada</option>
+                              <option value="SG">Singapore</option>
+                              <option value="UK">UK</option>
+                              <option value="UAE">UAE</option>
+                            </select>
+
+                            <svg class="select__arrow" viewBox="0 0 16 16">
+                              <polyline
+                                points="3.5,6.5 8,11 12.5,6.5"
+                                stroke-width="2"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></polyline>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="col-8">
+                          <div class="">
+                            <div
+                              class="d-flex align-items-center justify-content-between gap-3"
+                            >
+                              <div class="input-group-prepend w-100">
+                                <span class="d-flex gap-2 align-items-center">
+                                  <i class="fas fa-search"></i>
+                                  <input
+                                    type="text"
+                                    class="form-control border-0 search-field"
+                                    placeholder="Search Discounts & Coupons "
+                                  />
+                                </span>
+                              </div>
+
+                              <div class="input-group-append">
+                                <i
+                                  class="fa-solid fa-arrow-right-long text-success fs-3"
+                                ></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="">
+              <div class="card bg-dark text-white border-0">
+                <img
+                  src="assets/img/banner/home-banner-3.jpg"
+                  class="card-img img-fluid"
+                  alt="..."
+                />
+                <div
+                  class="card-img-overlay d-flex justify-content-center align-items-center container"
+                >
+                  <div class="text-center py-5">
+                    <h1 class="card-title text-white h1">
+                      Search Best Coupon Deals
+                    </h1>
+
+                    <div
+                      style="background-color: rgba(0, 0, 0, 0.7)"
+                      class="px-5 py-md-1 py-lg-2 rounded-pill mt-md-5"
+                    >
+                      <div class="row align-items-center">
+                        <div
+                          class="select-section border-end col-4 border-light"
+                        >
+                          <div class="select">
+                            <span class="select__flag"></span>
+                            <select
+                              class="select__input"
+                              name="country-selector"
+                              id="country-selector"
+                            >
+                              <option value="CA">Canada</option>
+                              <option value="SG">Singapore</option>
+                              <option value="UK">UK</option>
+                              <option value="UAE">UAE</option>
+                            </select>
+
+                            <svg class="select__arrow" viewBox="0 0 16 16">
+                              <polyline
+                                points="3.5,6.5 8,11 12.5,6.5"
+                                stroke-width="2"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></polyline>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="col-8">
+                          <div class="">
+                            <div
+                              class="d-flex align-items-center justify-content-between gap-3"
+                            >
+                              <div class="input-group-prepend w-100">
+                                <span class="d-flex gap-2 align-items-center">
+                                  <i class="fas fa-search"></i>
+                                  <input
+                                    type="text"
+                                    class="form-control border-0 search-field"
+                                    placeholder="Search Discounts & Coupons "
+                                  />
+                                </span>
+                              </div>
+
+                              <div class="input-group-append">
+                                <i
+                                  class="fa-solid fa-arrow-right-long text-success fs-3"
+                                ></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev text-decoration-none w-auto ps-3"
+          href="#Lebustore-hero-carousel"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <i class="fas fa-chevron-left"></i>
+        </a>
+        <a
+          class="carousel-control-next text-decoration-none w-auto pe-3"
+          href="#Lebustore-hero-carousel"
+          role="button"
+          data-bs-slide="next"
+        >
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- <section class="">
+      <div class="card bg-dark text-white border-0">
+        <img
+          src="assets/img/banner/discount-banner-bg.png"
+          class="card-img img-fluid"
+          style="min-height: 50vh; height: 100%"
+          alt="..."
+        />
+        <div
+          class="card-img-overlay d-flex justify-content-center align-items-center container"
+        >
+          <div class="text-center py-5">
+            <h1 class="card-title h1">Search Best Coupon Deals</h1>
+
+            <div
+              style="background-color: rgba(0, 0, 0, 0.700)"
+              class="px-5 py-md-1 py-lg-2 rounded-pill mt-md-5"
+            >
+              <div class="row align-items-center">
+                <div class="select-section border-end col-4 border-light">
+                  <div class="select">
+                    <span class="select__flag"></span>
+                    <select
+                      class="select__input"
+                      name="country-selector"
+                      id="country-selector"
+                    >
+                      
+                      <option value="IT">Italy</option>
+                      <option value="PT">Portugal</option>
+                      <option value="ES">Spain</option>
+                    </select>
+
+                    <svg class="select__arrow" viewBox="0 0 16 16">
+                      <polyline
+                        points="3.5,6.5 8,11 12.5,6.5"
+                        stroke-width="2"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></polyline>
+                    </svg>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="">
+                    <div
+                      class="d-flex align-items-center justify-content-between gap-3"
+                    >
+                      <div class="input-group-prepend w-100">
+                        <span class="d-flex gap-2 align-items-center">
+                          <i class="fas fa-search"></i>
+                          <input
+                            type="text"
+                            class="form-control border-0 search-field"
+                            placeholder="Search Discounts & Coupons "
+                          />
+                        </span>
+                      </div>
+
+                      <div class="input-group-append">
+                        <i class="fas fa-arrow-right text-warning"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Banner End  -->
+
+    <!-- Start Content -->
+    <section class="bg-light">
+      <div class="container py-5">
+        <div class="row g-5">
+          <!-- Product Start -->
+
+          <div class="col-lg-8 col-xl-9">
+            <div>
+              <h2 class="" style="color: #333333">Discounts & Coupons</h2>
+              <p class="fs-5 mb-0" style="color: #797979">
+                Check our featured items
+              </p>
+            </div>
+
+            <div class="row justify-content-end">
+              <div class="col-xl-12 product-filters">
+                <ul
+                  class="list-inline shop-top-menu pb-4 d-flex flex-wrap gap-3 align-items-center justify-content-md-end"
+                >
+                  <!-- <li data-filter="all" class="active list-inline-item me-lg-5">
+                    <a class="text-uppercase text-dark text-decoration-none"
+                      >All</a
+                    >
+                  </li> -->
+                  <li
+                    class="list-inline-item border border-2 px-3 py-2 rounded active"
+                    data-filter="all"
+                  >
+                    <a
+                      class="text-uppercase text-decoration-none fw-normal fs-6"
+                      >Featured</a
+                    >
+                  </li>
+
+                  <li
+                    class="list-inline-item border border-2 px-3 py-2 rounded"
+                    data-filter="latest-deals"
+                  >
+                    <a
+                      class="text-uppercase text-decoration-none fw-normal fs-6"
+                      >Latest Deals</a
+                    >
+                  </li>
+                  <li
+                    class="list-inline-item border border-2 px-3 py-2 rounded"
+                    data-filter="top-brands"
+                  >
+                    <a
+                      class="text-uppercase text-decoration-none fw-normal fs-6"
+                      >Top Brands</a
+                    >
+                  </li>
+                  <li
+                    class="list-inline-item border border-2 px-3 py-2 rounded"
+                    data-filter="popular"
+                  >
+                    <a
+                      class="text-uppercase text-decoration-none fw-normal fs-6"
+                      >Popular</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="pb-5">
+              <div
+                id="carouselExampleIndicators"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <ul class="d-flex justify-content-center align-items-center">
+                    <li
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></li>
+                    <li
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></li>
+                    <li
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></li>
+                  </ul>
+                </div>
+
+                <!-- Image Sliders -->
+                <div class="carousel-inner">
+                  <!-- Image one-->
+                  <div class="carousel-item active">
+                    <img
+                      src="assets/img/banner/Shopno Ad.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+
+                  <!-- image two -->
+                  <div class="carousel-item">
+                    <img
+                      src="assets/img/banner/Shopno Ad.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+
+                  <!-- Image Three -->
+                  <div class="carousel-item">
+                    <img
+                      src="assets/img/banner/Shopno Ad.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <section>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev"
+                  >
+                    <span class="carousel-control-prev-icon"
+                      ><i class="fa-solid fa-angle-left fs-1 fw-bolder"></i
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next"
+                  >
+                    <span class="carousel-control-next-icon"
+                      ><i class="fa-solid fa-angle-right fs-1 fw-bolder"></i
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </section>
+              </div>
+            </div>
+
+            <div class="row product-section products g-4">
+              <!-- <div class="col-md-6 product" data-filter="all">
+                <div class="card mb-4 product-wap h-100 rounded border-0">
+                  <div class="card rounded border-0">
+                    <img
+                      class="card-img img-fluid border-bottom border-2"
+                      src="assets/img/brands/Group 1.png"
+                    />
+                    <div
+                      class="card-img-overlay rounded product-overlay d-flex align-items-center justify-content-center"
+                    >
+                      <ul class="list-unstyled">
+                        <li>
+                          <a class="btn btn-success text-white" href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a class="btn btn-success text-white" href="#"
+                            ><i class="far fa-eye"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a class="btn btn-success text-white" href="#"
+                            ><i class="fas fa-cart-plus"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="circle-badge">
+                      30% <br />
+                      OFF
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="h3 text-decoration-none"
+                      ><h5 style="color: #666666">EVERCARE DHAKA</h5></a
+                    >
+                    <h5 class="text-justify pt-3 pb-2" style="color: #323232; font-size: 17px;">
+                      Evercare Dhaka offer 10% OFF with Coupon Codes
+                    </h5>
+                  </div>
+                  <div
+                    class="d-flex flex-column flex-xl-row justify-content-between card-footer gap-2"
+                  >
+                    <div class="d-flex align-items-center gap-3 fs-5">
+                      <del class="mb-0 text-muted">BDT 300.00</del>
+                      <h5 class="mb-0 fs-5">BDT 250.00</h5>
+                    </div>
+                    <div
+                      class="d-flex align-items-center gap-3 justify-content-between"
+                    >
+                      <img src="assets/img/country/UAE.png" alt="" />
+                      <a href="#" class="text-decoration-none">
+                        <p
+                          class="text-success fw-bold mb-0 border boeder-2 border-dark p-2"
+                        >
+                          Coupon Code
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 product" data-filter="all">
+                <div class="card mb-4 product-wap h-100 rounded border-0">
+                  <div class="card rounded border-0">
+                    <img
+                      class="card-img img-fluid border-bottom border-2"
+                      src="assets/img/brands/Lotto.png"
+                    />
+                    <div
+                      class="card-img-overlay rounded product-overlay d-flex align-items-center justify-content-center"
+                    >
+                      <ul class="list-unstyled">
+                        <li>
+                          <a class="btn btn-success text-white" href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a class="btn btn-success text-white" href="#"
+                            ><i class="far fa-eye"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a class="btn btn-success text-white" href="#"
+                            ><i class="fas fa-cart-plus"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="circle-badge">
+                      30% <br />
+                      OFF
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="h3 text-decoration-none"
+                      ><h5 style="color: #666666">LOTTO</h5></a
+                    >
+                    <h5 class="text-justify pt-3 pb-2" style="color: #323232; font-size: 17px;">
+                      Lotto EID offer upto 20% OFF With Coupon & Promo Codes
+                    </h5>
+                  </div>
+                  <div
+                    class="d-flex flex-column flex-xl-row justify-content-between card-footer gap-2"
+                  >
+                    <div class="d-flex align-items-center gap-3 fs-5">
+                      <del class="mb-0 text-muted">BDT 300.00</del>
+                      <h5 class="mb-0 fs-5">BDT 250.00</h5>
+                    </div>
+                    <div
+                      class="d-flex align-items-center gap-3 justify-content-between"
+                    >
+                      <img src="assets/img/country/UAE.png" alt="" />
+                      <a href="#" class="text-decoration-none">
+                        <p
+                          class="text-success fw-bold mb-0 border boeder-2 border-dark p-2"
+                        >
+                          Coupon Code
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+
+              <div
+                class="col-md-6 col-xl-4 product position-relative"
+                data-filter="latest-deals"
+              >
+                <a href="product-details.html">
+                  <div class="card h-100 product-card">
+                    <img
+                      src="assets/img/brands/Yellow Bangladesh.png"
+                      class="card-img-top"
+                      alt="Product Image"
+                    />
+                    <div class="overlay">
+                      <div class="overlay-content">
+                        <p style="color: #ffffff" class="mb-0">
+                          YELLOW BANGLADESH
+                        </p>
+                        <div
+                          class="d-flex align-items-center justify-content-center gap-3"
+                        >
+                          <del class="mb-0"
+                            ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                            100</del
+                          >
+                          <div class="offer-price">
+                            <h5 class="mb-0">
+                              <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                              75
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <a
+                        href="#"
+                        class="text-decoration-none d-flex align-items-center gap-3"
+                      >
+                        <img
+                          src="assets/img/country/UAE.png"
+                          style="width: 40px"
+                          alt=""
+                        />
+                        <h6 style="color: #666666" class="mb-0">
+                          YELLOW BANGLADESH
+                        </h6></a
+                      >
+                      <h5
+                        class="text-justify pt-3 pb-2"
+                        style="color: #323232; font-size: 17px"
+                      >
+                        Yellow EID offer Upto 20% OFF With Coupon & Promo Codes
+                      </h5>
+                      <div>
+                        <div class="d-flex align-items-center gap-3">
+                          <del class="mb-0 text-muted"
+                            ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                            100</del
+                          >
+                          <div class="offer-price">
+                            <h5 class="mb-0 text-success">
+                              <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                              75
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="mt-3">
+                          <a href="#" class="text-decoration-none">
+                            <p
+                              class="fw-bold mb-0 d-flex align-items-center gap-4"
+                              style="color: #797979"
+                            >
+                              Coupon Code
+                              <i class="fa-solid fa-arrow-right-long"></i>
+                            </p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="icons">
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            class="btn btn-success text-white wishlist"
+                            href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a class="btn btn-success text-white view" href="#"
+                            ><i class="far fa-eye"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+                <div class="circle-badge">
+                  30% <br />
+                  OFF
+                </div>
+              </div>
+              <div
+                class="col-md-6 col-xl-4 product position-relative"
+                data-filter="latest-deals"
+              >
+                <a href="product-details.html">
+                  <div class="card h-100 product-card">
+                    <img
+                      class="card-img img-fluid"
+                      src="assets/img/brands/AArong.png"
+                    />
+                    <div class="overlay">
+                      <div class="overlay-content">
+                        <p style="color: #ffffff" class="mb-0">AARONG</p>
+                        <div
+                          class="d-flex align-items-center justify-content-center gap-3"
+                        >
+                          <del class="mb-0"
+                            ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                            100</del
+                          >
+                          <div class="offer-price">
+                            <h5 class="mb-0">
+                              <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                              75
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <a
+                        href="#"
+                        class="text-decoration-none d-flex align-items-center gap-3"
+                        ><img
+                          src="assets/img/country/UAE.png"
+                          style="width: 40px"
+                          alt=""
+                        />
+                        <h6 style="color: #666666" class="mb-0">AARONG</h6></a
+                      >
+                      <h5
+                        class="text-justify pt-3 pb-2"
+                        style="color: #323232; font-size: 17px"
+                      >
+                        Aarong Summer sale offer upto 20% OFF With Coupon &
+                        Promo Codes
+                      </h5>
+                      <div>
+                        <div class="d-flex align-items-center gap-3">
+                          <del class="mb-0 text-muted"
+                            ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                            100</del
+                          >
+                          <div class="offer-price">
+                            <h5 class="mb-0 text-success">
+                              <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                              75
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="mt-3">
+                          <a href="#" class="text-decoration-none">
+                            <p
+                              class="fw-bold mb-0 d-flex align-items-center gap-4"
+                              style="color: #797979"
+                            >
+                              Coupon Code
+                              <i class="fa-solid fa-arrow-right-long"></i>
+                            </p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="icons">
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            class="btn btn-success text-white wishlist"
+                            href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a class="btn btn-success text-white view" href="#"
+                            ><i class="far fa-eye"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+                <div class="circle-badge">
+                  30% <br />
+                  OFF
+                </div>
+              </div>
+
+              <div
+                class="col-md-6 col-xl-4 product position-relative"
+                data-filter="latest-deals"
+              >
+                <a href="product-details.html">
+                  <div class="card h-100 product-card">
+                    <img
+                      class="card-img img-fluid"
+                      src="assets/img/brands/Bata.png"
+                    />
+                    <div class="overlay">
+                      <div class="overlay-content">
+                        <p style="color: #ffffff" class="mb-0">BATA</p>
+                        <div
+                          class="d-flex align-items-center justify-content-center gap-3"
+                        >
+                          <del class="mb-0"
+                            ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                            100</del
+                          >
+                          <div class="offer-price">
+                            <h5 class="mb-0">
+                              <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                              75
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <a
+                        href="#"
+                        class="text-decoration-none d-flex align-items-center gap-3"
+                        ><img
+                          src="assets/img/country/UAE.png"
+                          style="width: 40px"
+                          alt=""
+                        />
+                        <h6 style="color: #666666" class="mb-0">BATA</h6></a
+                      >
+                      <h5
+                        class="text-justify pt-3 pb-2"
+                        style="color: #323232; font-size: 17px"
+                      >
+                        5% Cash Back For Purchases Sitewide
+                      </h5>
+                      <div>
+                        <div class="d-flex align-items-center gap-3">
+                          <del class="mb-0 text-muted"
+                            ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                            100</del
+                          >
+                          <div class="offer-price">
+                            <h5 class="mb-0 text-success">
+                              <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                              75
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="mt-3">
+                          <a href="#" class="text-decoration-none">
+                            <p
+                              class="fw-bold mb-0 d-flex align-items-center gap-4"
+                              style="color: #797979"
+                            >
+                              Coupon Code
+                              <i class="fa-solid fa-arrow-right-long"></i>
+                            </p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="icons">
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            class="btn btn-success text-white wishlist"
+                            href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a class="btn btn-success text-white view" href="#"
+                            ><i class="far fa-eye"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+                <div class="circle-badge">
+                  30% <br />
+                  OFF
+                </div>
+              </div>
+
+              <div
+                class="col-md-6 col-xl-4 product position-relative"
+                data-filter="latest-deals"
+              >
+                <a href="product-details.html">
+                  <div class="card h-100 product-card">
+                    <img
+                      class="card-img img-fluid"
+                      src="assets/img/brands/GRAND SULTAN.png"
+                    />
+                    <div class="overlay">
+                      <div class="overlay-content">
+                        <p style="color: #ffffff" class="mb-0">GRAND SULTAN</p>
+                        <div
+                          class="d-flex align-items-center justify-content-center gap-3"
+                        >
+                          <del class="mb-0"
+                            ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                            100</del
+                          >
+                          <div class="offer-price">
+                            <h5 class="mb-0">
+                              <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                              75
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <a
+                        href="#"
+                        class="text-decoration-none d-flex align-items-center gap-3"
+                        ><img
+                          src="assets/img/country/UAE.png"
+                          style="width: 40px"
+                          alt=""
+                        />
+                        <h6 style="color: #666666" class="mb-0 text-uppercase">
+                          GRAND SULTAN
+                        </h6></a
+                      >
+                      <h5
+                        class="text-justify pt-3 pb-2"
+                        style="color: #323232; font-size: 17px"
+                      >
+                        Grand Sultan Tea Resort & Golf Srimongal Offers 20%
+                        Coupon Codes
+                      </h5>
+                      <div>
+                        <div class="d-flex align-items-center gap-3">
+                          <del class="mb-0 text-muted"
+                            ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                            100</del
+                          >
+                          <div class="offer-price">
+                            <h5 class="mb-0 text-success">
+                              <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                              75
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="mt-3">
+                          <a href="#" class="text-decoration-none">
+                            <p
+                              class="fw-bold mb-0 d-flex align-items-center gap-4"
+                              style="color: #797979"
+                            >
+                              Coupon Code
+                              <i class="fa-solid fa-arrow-right-long"></i>
+                            </p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="icons">
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            class="btn btn-success text-white wishlist"
+                            href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a class="btn btn-success text-white view" href="#"
+                            ><i class="far fa-eye"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+                <div class="circle-badge">
+                  30% <br />
+                  OFF
+                </div>
+              </div>
+
+              <div
+                class="col-md-6 col-xl-4 product position-relative"
+                data-filter="latest-deals"
+              >
+                <a href="product-details.html">
+                  <div class="card h-100 product-card">
+                    <img
+                      class="card-img img-fluid border-bottom"
+                      src="assets/img/brands/Meridien.png"
+                    />
+
+                    <div class="overlay">
+                      <div class="overlay-content">
+                        <p style="color: #ffffff" class="mb-0">
+                          MERIDIAN DHAKA
+                        </p>
+                        <div
+                          class="d-flex align-items-center justify-content-center gap-3"
+                        >
+                          <del class="mb-0"
+                            ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                            100</del
+                          >
+                          <div class="offer-price">
+                            <h5 class="mb-0">
+                              <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                              75
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <a
+                        href="#"
+                        class="text-decoration-none d-flex align-items-center gap-3"
+                        ><img
+                          src="assets/img/country/UAE.png"
+                          style="width: 40px"
+                          alt=""
+                        />
+                        <h6 style="color: #666666" class="mb-0 text-uppercase">
+                          MERIDIAN DHAKA
+                        </h6></a
+                      >
+
+                      <h5
+                        class="text-justify pt-3 pb-2"
+                        style="color: #323232; font-size: 17px"
+                      >
+                        Le Meridian Dhaka Offers 30% OFF With Coupon & Promo
+                        Codes
+                      </h5>
+                      <div>
+                        <div class="d-flex align-items-center gap-3">
+                          <del class="mb-0 text-muted"
+                            ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                            100</del
+                          >
+                          <div class="offer-price">
+                            <h5 class="mb-0 text-success">
+                              <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                              75
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="mt-3">
+                          <a href="#" class="text-decoration-none">
+                            <p
+                              class="fw-bold mb-0 d-flex align-items-center gap-4"
+                              style="color: #797979"
+                            >
+                              Coupon Code
+                              <i class="fa-solid fa-arrow-right-long"></i>
+                            </p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="icons">
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            class="btn btn-success text-white wishlist"
+                            href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a class="btn btn-success text-white view" href="#"
+                            ><i class="far fa-eye"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+                <div class="circle-badge">
+                  30% <br />
+                  OFF
+                </div>
+              </div>
+              <div
+                class="col-md-6 col-xl-4 product position-relative"
+                data-filter="top-brands"
+              >
+                <a href="product-details.html">
+                  <div class="card h-100 product-card">
+                    <img
+                      class="card-img img-fluid border-bottom"
+                      src="assets/img/brands/Radisson Dhaka.png"
+                    />
+
+                    <div class="overlay">
+                      <div class="overlay-content">
+                        <p style="color: #ffffff" class="mb-0 text-uppercase">
+                          Radisson Dhaka
+                        </p>
+                        <div
+                          class="d-flex align-items-center justify-content-center gap-3"
+                        >
+                          <del class="mb-0"
+                            ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                            100</del
+                          >
+                          <div class="offer-price">
+                            <h5 class="mb-0">
+                              <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                              75
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <a
+                        href="#"
+                        class="text-decoration-none d-flex align-items-center gap-3"
+                        ><img
+                          src="assets/img/country/UAE.png"
+                          style="width: 40px"
+                          alt=""
+                        />
+                        <h6 style="color: #666666" class="mb-0 text-uppercase">
+                          Radisson Dhaka
+                        </h6></a
+                      >
+
+                      <h5
+                        class="text-justify pt-3 pb-2"
+                        style="color: #323232; font-size: 17px"
+                      >
+                        Radisson Dhaka Offers 30% OFF With Coupon & Promo Codes
+                      </h5>
+                      <div>
+                        <div class="d-flex align-items-center gap-3">
+                          <del class="mb-0 text-muted"
+                            ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                            100</del
+                          >
+                          <div class="offer-price">
+                            <h5 class="mb-0 text-success">
+                              <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                              75
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="mt-3">
+                          <a href="#" class="text-decoration-none">
+                            <p
+                              class="fw-bold mb-0 d-flex align-items-center gap-4"
+                              style="color: #797979"
+                            >
+                              Coupon Code
+                              <i class="fa-solid fa-arrow-right-long"></i>
+                            </p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="icons">
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            class="btn btn-success text-white wishlist"
+                            href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a class="btn btn-success text-white view" href="#"
+                            ><i class="far fa-eye"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+                <div class="circle-badge">
+                  30% <br />
+                  OFF
+                </div>
+              </div>
+
+              <div
+                class="col-md-6 col-xl-4 product position-relative"
+                data-filter="top-brands"
+              >
+                <a href="product-details.html">
+                  <div class="card h-100 product-card">
+                    <img
+                      class="card-img img-fluid border-bottom"
+                      src="assets/img/brands/WALTON.png"
+                    />
+
+                    <div class="overlay">
+                      <div class="overlay-content">
+                        <p style="color: #ffffff" class="mb-0 text-uppercase">
+                          WALTON
+                        </p>
+                        <div
+                          class="d-flex align-items-center justify-content-center gap-3"
+                        >
+                          <del class="mb-0"
+                            ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                            100</del
+                          >
+                          <div class="offer-price">
+                            <h5 class="mb-0">
+                              <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                              75
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <a
+                        href="#"
+                        class="text-decoration-none d-flex align-items-center gap-3"
+                        ><img
+                          src="assets/img/country/UAE.png"
+                          style="width: 40px"
+                          alt=""
+                        />
+                        <h6 style="color: #666666" class="mb-0 text-uppercase">
+                          WALTON
+                        </h6></a
+                      >
+
+                      <h5
+                        class="text-justify pt-3 pb-2"
+                        style="color: #323232; font-size: 17px"
+                      >
+                        Walto Eid Offers Upto 30% OFF With Coupon & Promo Codes
+                      </h5>
+                      <div>
+                        <div class="d-flex align-items-center gap-3">
+                          <del class="mb-0 text-muted"
+                            ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                            100</del
+                          >
+                          <div class="offer-price">
+                            <h5 class="mb-0 text-success">
+                              <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                              75
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="mt-3">
+                          <a href="#" class="text-decoration-none">
+                            <p
+                              class="fw-bold mb-0 d-flex align-items-center gap-4"
+                              style="color: #797979"
+                            >
+                              Coupon Code
+                              <i class="fa-solid fa-arrow-right-long"></i>
+                            </p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="icons">
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            class="btn btn-success text-white wishlist"
+                            href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a class="btn btn-success text-white view" href="#"
+                            ><i class="far fa-eye"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+                <div class="circle-badge">
+                  30% <br />
+                  OFF
+                </div>
+              </div>
+              <div
+                class="col-md-6 col-xl-4 product position-relative"
+                data-filter="popular"
+              >
+                <a href="product-details.html">
+                  <div class="card h-100 product-card">
+                    <img
+                      class="card-img img-fluid border-bottom"
+                      src="assets/img/brands/XIAOMI.png"
+                    />
+
+                    <div class="overlay">
+                      <div class="overlay-content">
+                        <p style="color: #ffffff" class="mb-0 text-uppercase">
+                          XIAOMI
+                        </p>
+                        <div
+                          class="d-flex align-items-center justify-content-center gap-3"
+                        >
+                          <del class="mb-0"
+                            ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                            100</del
+                          >
+                          <div class="offer-price">
+                            <h5 class="mb-0">
+                              <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                              75
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <a
+                        href="#"
+                        class="text-decoration-none d-flex align-items-center gap-3"
+                        ><img
+                          src="assets/img/country/UAE.png"
+                          style="width: 40px"
+                          alt=""
+                        />
+                        <h6 style="color: #666666" class="mb-0 text-uppercase">
+                          XIAOMI
+                        </h6></a
+                      >
+
+                      <h5
+                        class="text-justify pt-3 pb-2"
+                        style="color: #323232; font-size: 17px"
+                      >
+                        Xiaomi SALE! Extra 20% on Mobile With Code
+                      </h5>
+                      <div>
+                        <div class="d-flex align-items-center gap-3">
+                          <del class="mb-0 text-muted"
+                            ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                            100</del
+                          >
+                          <div class="offer-price">
+                            <h5 class="mb-0 text-success">
+                              <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                              75
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="mt-3">
+                          <a href="#" class="text-decoration-none">
+                            <p
+                              class="fw-bold mb-0 d-flex align-items-center gap-4"
+                              style="color: #797979"
+                            >
+                              Coupon Code
+                              <i class="fa-solid fa-arrow-right-long"></i>
+                            </p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="icons">
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            class="btn btn-success text-white wishlist"
+                            href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a class="btn btn-success text-white view" href="#"
+                            ><i class="far fa-eye"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+                <div class="circle-badge">
+                  30% <br />
+                  OFF
+                </div>
+              </div>
+
+              <div
+                class="col-md-6 col-xl-4 product position-relative"
+                data-filter="popular"
+              >
+                <a href="product-details.html">
+                  <div class="card h-100 product-card">
+                    <img
+                      class="card-img img-fluid border-bottom"
+                      src="assets/img/brands/Lg.png"
+                    />
+
+                    <div class="overlay">
+                      <div class="overlay-content">
+                        <p style="color: #ffffff" class="mb-0 text-uppercase">
+                          LG DUBAI
+                        </p>
+                        <div
+                          class="d-flex align-items-center justify-content-center gap-3"
+                        >
+                          <del class="mb-0"
+                            ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                            100</del
+                          >
+                          <div class="offer-price">
+                            <h5 class="mb-0">
+                              <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                              75
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <a
+                        href="#"
+                        class="text-decoration-none d-flex align-items-center gap-3"
+                        ><img
+                          src="assets/img/flag/Flag.png"
+                          style="width: 40px"
+                          alt=""
+                        />
+                        <h6 style="color: #666666" class="mb-0 text-uppercase">
+                          LG DUBAI
+                        </h6></a
+                      >
+
+                      <h5
+                        class="text-justify pt-3 pb-2"
+                        style="color: #323232; font-size: 17px"
+                      >
+                        LG SALE end Friday! Extra 20% on Electronics With Code
+                      </h5>
+                      <div>
+                        <div class="d-flex align-items-center gap-3">
+                          <del class="mb-0 text-muted"
+                            ><i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                            100</del
+                          >
+                          <div class="offer-price">
+                            <h5 class="mb-0 text-success">
+                              <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                              75
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="mt-3">
+                          <a href="#" class="text-decoration-none">
+                            <p
+                              class="fw-bold mb-0 d-flex align-items-center gap-4"
+                              style="color: #797979"
+                            >
+                              Coupon Code
+                              <i class="fa-solid fa-arrow-right-long"></i>
+                            </p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="icons">
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            class="btn btn-success text-white wishlist"
+                            href="#"
+                            ><i class="far fa-heart"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a class="btn btn-success text-white view" href="#"
+                            ><i class="far fa-eye"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+                <div class="circle-badge">
+                  30% <br />
+                  OFF
+                </div>
+              </div>
+            </div>
+            <!-- <div div="row">
+                <ul class="pagination pagination-lg justify-content-end">
+                  <li class="page-item disabled">
+                    <a
+                      class="page-link active rounded mr-3 shadow-sm border-top-0 border-left-0"
+                      href="#"
+                      tabindex="-1"
+                      >1</a
+                    >
+                  </li>
+                  <li class="page-item">
+                    <a
+                      class="page-link rounded mr-3 shadow-sm border-top-0 border-left-0 text-dark"
+                      href="#"
+                      >2</a
+                    >
+                  </li>
+                  <li class="page-item">
+                    <a
+                      class="page-link rounded shadow-sm border-top-0 border-left-0 text-dark"
+                      href="#"
+                      >3</a
+                    >
+                  </li>
+                </ul>
+              </div> -->
+            <!-- <div class="text-center">
+              <button
+                class="btn btn-outline-success border-success text-success bg-light"
+              >
+                View All <i class="fa fa-arrow-right ps-2"></i>
+              </button>
+            </div> -->
+          </div>
+
+          <div class="col-lg-4 col-xl-3">
+            <h2 class="pb-4" style="color: #333333">Discount Range</h2>
+            <!-- <div class="mb-3 pt-4">
+              <h4 class="mb-2">Discount Range</h4>
+            </div> -->
+
+            <div class="coupon-section">
+              <div class="card">
+                <div class="card-body pb-5">
+                  <div class="pb-4">
+                    <div
+                      class="d-flex justify-content-between align-items-center discount-range"
+                    >
+                      <output
+                        class="text-success fw-bold"
+                        id="amount"
+                        name="amount"
+                        min-velue="0"
+                        max-value="100"
+                        for="rangeInput"
+                        >0%</output
+                      >
+                      <output class="text-success fw-bold">100</output>
+                    </div>
+                    <input
+                      type="range"
+                      id="rangeInput"
+                      name="rangeInput"
+                      min="0"
+                      max="100"
+                      value="0"
+                      oninput="amount.value=rangeInput.value"
+                      class="form-range w-100"
+                    />
+                  </div>
+                  <ul class="list-unstyled lebustore-accordion">
+                    <li class="pb-3">
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Categories</option>
+                        <option value="1">Men</option>
+                        <option value="2">Women</option>
+                        <option value="3">Others</option>
+                      </select>
+                      <!-- <a
+                        class="collapsed border border-1 border-dark p-2 d-flex justify-content-between h3 text-decoration-none mb-0"
+                        href="#"
+                      >
+                        Categories
+                        <i class="fa fa-fw fa-chevron-down mt-1"></i>
+                      </a>
+                      <div
+                        class="card collapse bg-light border-dark rounded-0 border-top-0"
+                      >
+                        <ul class="list-unstyled pl-3 card-body">
+                          <li>
+                            <a class="text-decoration-none" href="#">Men</a>
+                          </li>
+                          <li>
+                            <a class="text-decoration-none" href="#">Women</a>
+                          </li>
+                        </ul>
+                      </div> -->
+                    </li>
+                    <li class="pb-3">
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Brands</option>
+                        <option value="1">Sport</option>
+                        <option value="2">Luxury</option>
+                        <option value="3">Others</option>
+                      </select>
+                      <!-- <a
+                        class="collapsed border border-1 border-dark p-2 d-flex justify-content-between h3 text-decoration-none mb-0"
+                        href="#"
+                      >
+                        Brands
+                        <i class="fa fa-fw fa-chevron-down mt-1"></i>
+                      </a>
+                      <div
+                        class="card collapse bg-light border-dark rounded-0 border-top-0"
+                        id="collapseTwo"
+                      >
+                        <ul class="list-unstyled pl-3 card-body">
+                          <li>
+                            <a class="text-decoration-none" href="#">Sport</a>
+                          </li>
+                          <li>
+                            <a class="text-decoration-none" href="#">Luxury</a>
+                          </li>
+                        </ul>
+                      </div> -->
+                    </li>
+                    <li class="pb-3">
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Countries</option>
+                        <option value="1">Bangladesh</option>
+                        <option value="2">Dubai</option>
+                        <option value="3">Usa</option>
+                      </select>
+                      <!-- <a
+                        class="collapsed border border-1 border-dark p-2 d-flex justify-content-between h3 text-decoration-none mb-0"
+                        href="#"
+                      >
+                        Countries
+                        <i class="fa fa-fw fa-chevron-down mt-1"></i>
+                      </a>
+                      <div
+                        id="collapseThree"
+                        class="card collapse bg-light border-dark rounded-0 border-top-0"
+                      >
+                        <ul class="list-unstyled pl-3 card-body">
+                          <li>
+                            <a class="text-decoration-none" href="#"
+                              >Bangladesh</a
+                            >
+                          </li>
+                          <li>
+                            <a class="text-decoration-none" href="#">Canada</a>
+                          </li>
+                          <li>
+                            <a class="text-decoration-none" href="#">USA</a>
+                          </li>
+                        </ul>
+                      </div> -->
+                    </li>
+                  </ul>
+
+                  <div class="text-center">
+                    <button
+                      class="btn btn-success rounded-pill w-100 py-2 text-uppercase fw-bold py-3"
+                    >
+                      Filter Coupons
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Coupon Categories Start -->
+            <div class="coupon-section">
+              <div class="mt-5">
+                <h3 class="pb-3" style="color: #333333">Coupon Categories</h3>
+              </div>
+              <div class="card">
+                <div class="card-body pt-4">
+                  <input
+                    type="search"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Search"
+                  />
+                  <ul class="list-unstyled pt-3">
+                    <li>
+                      <div class="d-flex justify-content-between pb-2 gap-3">
+                        <div
+                          class="form-check d-flex align-items-center gap-3 fs-5"
+                        >
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckDefault"
+                          >
+                            Fashion
+                          </label>
+                        </div>
+                        <span class="coupon-num pe-3 rounded">13</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex justify-content-between pb-2 gap-3">
+                        <div
+                          class="form-check d-flex align-items-center gap-3 fs-5"
+                        >
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckDefault"
+                          >
+                            Beauty
+                          </label>
+                        </div>
+                        <span class="coupon-num pe-3 rounded">13</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex justify-content-between pb-2 gap-3">
+                        <div
+                          class="form-check d-flex align-items-center gap-3 fs-5"
+                        >
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckDefault"
+                          >
+                            Cloth
+                          </label>
+                        </div>
+                        <span class="coupon-num pe-3 rounded">13</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex justify-content-between pb-2 gap-3">
+                        <div
+                          class="form-check d-flex align-items-center gap-3 fs-5"
+                        >
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckDefault"
+                          >
+                            Bag
+                          </label>
+                        </div>
+                        <span class="coupon-num pe-3 rounded">15</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex justify-content-between pb-2 gap-3">
+                        <div
+                          class="form-check d-flex align-items-center gap-3 fs-5"
+                        >
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckDefault"
+                          >
+                            Sunglass
+                          </label>
+                        </div>
+                        <span class="coupon-num pe-3 rounded">12</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex justify-content-between pb-2 gap-3">
+                        <div
+                          class="form-check d-flex align-items-center gap-3 fs-5"
+                        >
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckDefault"
+                          >
+                            T-Shirt
+                          </label>
+                        </div>
+                        <span class="coupon-num pe-3 rounded">18</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex justify-content-between pb-2">
+                        <div
+                          class="form-check d-flex align-items-center gap-3 fs-5"
+                        >
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckDefault"
+                          >
+                            Polo Shirt
+                          </label>
+                        </div>
+                        <span class="coupon-num pe-3 rounded">15</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Coupon Brands Start -->
+            <div class="coupon-section">
+              <div class="mt-5">
+                <h3 class="pb-3" style="color: #333333">Coupon Brands</h3>
+              </div>
+              <div class="card">
+                <div class="card-body pt-4">
+                  <input
+                    type="search"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Search"
+                  />
+                  <ul class="list-unstyled pt-3">
+                    <li class="py-2">
+                      <div class="d-flex justify-content-between pb-2">
+                        <div
+                          class="form-check d-flex align-items-center gap-4 fs-5"
+                        >
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckDefault"
+                          >
+                            <img
+                              class="img-fluid w-50"
+                              src="assets/img/partners/Bata.png"
+                              alt=""
+                            />
+                          </label>
+                        </div>
+                        <span class="coupon-num pe-3 rounded">13</span>
+                      </div>
+                    </li>
+                    <li class="py-2">
+                      <div class="d-flex justify-content-between pb-2">
+                        <div
+                          class="form-check d-flex align-items-center gap-4 fs-5"
+                        >
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckDefault"
+                          >
+                            <img
+                              class="img-fluid w-50"
+                              src="assets/img/partners/Walton.png"
+                              alt=""
+                            />
+                          </label>
+                        </div>
+                        <span class="coupon-num pe-3 rounded">13</span>
+                      </div>
+                    </li>
+                    <li class="py-2">
+                      <div class="d-flex justify-content-between pb-2">
+                        <div
+                          class="form-check d-flex align-items-center gap-4 fs-5"
+                        >
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckDefault"
+                          >
+                            <img
+                              class="img-fluid w-50"
+                              src="assets/img/partners/radisson.png"
+                              alt=""
+                            />
+                          </label>
+                        </div>
+                        <span class="coupon-num pe-3 rounded">13</span>
+                      </div>
+                    </li>
+                    <li class="py-2">
+                      <div class="d-flex justify-content-between pb-2">
+                        <div
+                          class="form-check d-flex align-items-center gap-4 fs-5"
+                        >
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckDefault"
+                          >
+                            <img
+                              class="img-fluid w-50"
+                              src="assets/img/partners/Agora.png"
+                              alt=""
+                            />
+                          </label>
+                        </div>
+                        <span class="coupon-num pe-3 rounded">15</span>
+                      </div>
+                    </li>
+                    <li class="py-2">
+                      <div class="d-flex justify-content-between pb-2">
+                        <div
+                          class="form-check d-flex align-items-center gap-4 fs-5"
+                        >
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckDefault"
+                          >
+                            <img
+                              class="img-fluid w-50"
+                              src="assets/img/partners/Samsung.png"
+                              alt=""
+                            />
+                          </label>
+                        </div>
+                        <span class="coupon-num pe-3 rounded">12</span>
+                      </div>
+                    </li>
+                    <li class="py-2">
+                      <div class="d-flex justify-content-between pb-2">
+                        <div
+                          class="form-check d-flex align-items-center gap-4 fs-5"
+                        >
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckDefault"
+                          >
+                            <img
+                              class="img-fluid w-50"
+                              src="assets/img/partners/Meridian.png"
+                              alt=""
+                            />
+                          </label>
+                        </div>
+                        <span class="coupon-num pe-3 rounded">18</span>
+                      </div>
+                    </li>
+                    <li class="py-2">
+                      <div class="d-flex justify-content-between pb-2">
+                        <div
+                          class="form-check d-flex align-items-center gap-4 fs-5"
+                        >
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckDefault"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexCheckDefault"
+                          >
+                            <img
+                              class="img-fluid w-50"
+                              src="assets/img/partners/shopno.png"
+                              alt=""
+                            />
+                          </label>
+                        </div>
+                        <span class="coupon-num pe-3 rounded">15</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product End -->
+        </div>
+      </div>
+    </section>
+    <!-- End Content -->
+
+    <!-- Discount Start -->
+    <section>
+      <div class="discount-section">
+        <div class="row mx-auto discount-container">
+          <div
+            class="col-12 col-md-10 col-xl-6 d-flex justify-content-center flex-column px-0 mx-auto info-section text-white"
+          >
+            <p class="info-content">
+              <span class="fw-bold"
+                >Lebu<span style="color: #fdc332">Store</span></span
+              >
+              serves as your committed deal manager, diligently scouring various
+              categories such as <br />
+              <br />
+            </p>
+            <p class="info-content">
+              <strong class=""
+                >Electronics, Fashion, FMCG, and Groceries</strong
+              >
+            </p>
+
+            <p class="info-content">
+              to unearth premium bargains for your benefit
+            </p>
+          </div>
+          <div class="col d-none d-lg-block"></div>
+        </div>
+      </div>
+
+      <!-- <div
+        class="card text-white h-100 border-0 offer-section"
+        style="background-image: url(assets/img/discount-banner.png)"
+      >
+      
+        <div class="card-img-overlay row mx-auto discount-container">
+
+          
+          <div
+            class="col-12 col-md-12 col-xl-6 d-flex justify-content-center flex-column px-0 info-section"
+          >
+          <p class="info-content">
+            <span class="fw-bold"
+                >Lebu<span style="color: #fdc332">Store</span></span
+              >
+              serves as your committed deal manager, diligently scouring various
+              categories such as <br />
+              <br />
+          </p>
+          <p class="info-content">
+            <strong class=""
+                >Electronics, Fashion, FMCG, and Groceries</strong>
+          </p>
+           
+              
+             <p class="info-content">
+              to unearth premium bargains for your benefit
+             </p> 
+              
+          </div>
+          <div class="col d-none d-lg-block"></div>
+        </div>
+      </div> -->
+    </section>
+    <!-- Discount End -->
+
+    <!-- Partners Start -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row pt-3">
+          <div
+            class="col d-flex justify-content-between py-2 align-items-center"
+          >
+            <h3 class="" style="color: #333333">Trusted Partners</h3>
+            <a
+              href="#"
+              class="text-decoration-none text-success border border-success px-3 py-2 rounded-3 fw-bold"
+            >
+              About Us
+              <i class="fa-solid fa-arrow-right-long text-dark ps-3"></i>
+            </a>
+          </div>
+          <p class="fs-5" style="color: #797979">
+            Our story is co-authored by our trusted partners, who share our
+            vision of creating a
+            <strong class="text-dark">world of savings</strong>
+          </p>
+        </div>
+        <div
+          class="row row-cols-2 row-cols-md-3 row-cols-lg-4 container mx-auto align-items-center g-5"
+        >
+          <div class="col text-center p-4">
+            <img
+              class="img-fluid"
+              src="assets/img/partners/Aarong.png"
+              alt=""
+            />
+          </div>
+          <div class="col text-center p-4">
+            <img class="img-fluid" src="assets/img/partners/Agora.png" alt="" />
+          </div>
+          <div class="col text-center p-4">
+            <img class="img-fluid" src="assets/img/partners/Bata.png" alt="" />
+          </div>
+          <div class="col text-center p-4">
+            <img
+              class="img-fluid"
+              src="assets/img/partners/Ecstasy.png"
+              alt=""
+            />
+          </div>
+          <div class="col text-center p-4">
+            <img
+              class="img-fluid"
+              src="assets/img/partners/Evercare.png"
+              alt=""
+            />
+          </div>
+          <div class="col text-center p-4">
+            <img class="img-fluid" src="assets/img/partners/G & G.png" alt="" />
+          </div>
+          <div class="col text-center p-4">
+            <img
+              class="img-fluid"
+              src="assets/img/partners/Grameenphone.png"
+              alt=""
+            />
+          </div>
+          <div class="col text-center p-4">
+            <img class="img-fluid" src="assets/img/partners/Hatil.png" alt="" />
+          </div>
+          <div class="col text-center p-4">
+            <img class="img-fluid" src="assets/img/partners/LG.png" alt="" />
+          </div>
+          <div class="col text-center p-4">
+            <img
+              class="img-fluid"
+              src="assets/img/partners/Meridian.png"
+              alt=""
+            />
+          </div>
+          <div class="col text-center p-4">
+            <img class="img-fluid" src="assets/img/partners/Logo.png" alt="" />
+          </div>
+          <div class="col text-center p-4">
+            <img class="img-fluid" src="assets/img/partners/Sara.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Partners End -->
+
+    <!-- Start Footer -->
+    <footer
+      class="bg-dark"
+      style="
+        background-image: url(assets/img/FooterImage.png);
+        background-size: cover;
+        background-position: center;
+      "
+      id="lebustore_footer"
+    >
+      <div class="py-5">
+        <div
+          class="container p-5"
+          style="background-color: rgba(24, 23, 23, 0.85)"
+        >
+          <div class="row text-light mb-4 align-items-center">
+            <div class="col-12 col-lg-6 me-auto footer-info">
+              <h3 class="text-white fw-normal">
+                Subscribe for the best deals!
+              </h3>
+              <p class="footer-info">
+                Step into the world of online discount with us.
+              </p>
+            </div>
+            <div class="col-12 col-lg-6">
+              <label class="sr-only" for="subscribeEmail text-white"
+                >Enter Email Address</label
+              >
+              <div class="input-group mb-2 position-relative">
+                <input
+                  type="text"
+                  class="form-control border-light text-white rounded-pill px-4 py-3"
+                  id="subscribeEmail"
+                  placeholder="Enter Email Address"
+                />
+                <div
+                  class="input-group-text subscribe-btn btn-success text-white fw-bold position-absolute rounded-pill px-3 px-md-5 py-3"
+                >
+                  Subscribe
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mb-3">
+              <div class="w-100 my-3 border-top border-light"></div>
+            </div>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-5">
+            <div class="col">
+              <a href="home.html" class="pb-3 border-light logo">
+                <img src="assets/img/lebustore-white-logo.png" alt="" />
+              </a>
+              <p class="py-3 footer-info text-justify">
+                It might should like a fairytale but with lebustore it's nothing
+                but the truth! where you can save, share and shop to your
+                heart's content.
+              </p>
+
+              <!-- <ul class="list-unstyled text-light footer-link-list">
+                <li>
+                  <i class="fas fa-map-marker-alt fa-fw"></i>
+                  123 Consectetur at ligula 10660
+                </li>
+                <li>
+                  <i class="fa fa-phone fa-fw"></i>
+                  <a class="text-decoration-none" href="tel:010-020-0340"
+                    >010-020-0340</a
+                  >
+                </li>
+                <li>
+                  <i class="fa fa-envelope fa-fw"></i>
+                  <a class="text-decoration-none" href="mailto:info@company.com"
+                    >info@company.com</a
+                  >
+                </li>
+              </ul> -->
+              <p class="text-left footer-info">
+                Copyright &copy; 2024 Company Name | Designed by
+                <a
+                  rel="sponsored"
+                  href="https://techcloudltd.com/"
+                  target="_blank"
+                  >Tech Cloud Ltd.</a
+                >
+              </p>
+            </div>
+
+            <div class="col">
+              <h5 class="text-white pb-3 border-light text-uppercase">
+                Important Links
+              </h5>
+              <ul class="list-unstyled footer-info footer-link-list">
+                <li>
+                  <a class="text-decoration-none" href="home.html">Home</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="about.html">About</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#">Discounts</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#">Coupons</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#">Offers</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#">Partners</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#">Contacts</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col">
+              <h5 class="text-white pb-3 border-light text-uppercase">
+                Categories
+              </h5>
+              <ul class="list-unstyled footer-info footer-link-list">
+                <li>
+                  <a class="text-decoration-none" href="#">Electronics</a>
+                </li>
+                <li><a class="text-decoration-none" href="#">Fashion</a></li>
+                <li><a class="text-decoration-none" href="#">FMCG</a></li>
+                <li>
+                  <a class="text-decoration-none" href="#">Groceries</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#">Shoes</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#">Beauty</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#">Resort</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <h5 class="text-white pb-3 border-light text-uppercase">
+                Follow Us
+              </h5>
+              <ul class="list-inline text-left footer-icons">
+                <li
+                  class="list-inline-item border border-light rounded-circle text-center bg-lightgreen"
+                >
+                  <a
+                    class="text-dark text-decoration-none"
+                    target="_blank"
+                    href="http://facebook.com/"
+                    ><i class="fab fa-facebook-f fa-lg fa-fw"></i
+                  ></a>
+                </li>
+                <li
+                  class="list-inline-item border border-light rounded-circle text-center bg-lightgreen"
+                >
+                  <a
+                    class="text-dark text-decoration-none"
+                    target="_blank"
+                    href="https://www.instagram.com/"
+                    ><i class="fab fa-instagram fa-lg fa-fw"></i
+                  ></a>
+                </li>
+                <li
+                  class="list-inline-item border border-light rounded-circle text-center bg-lightgreen"
+                >
+                  <a
+                    class="text-dark text-decoration-none"
+                    target="_blank"
+                    href="https://twitter.com/"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                </li>
+                <li
+                  class="list-inline-item border border-light rounded-circle text-center bg-lightgreen"
+                >
+                  <a
+                    class="text-dark text-decoration-none"
+                    target="_blank"
+                    href="https://www.linkedin.com/"
+                    ><i class="fab fa-linkedin fa-lg fa-fw"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="w-100 bg-black py-3">
+        <div class="container">
+          <div class="row pt-2">
+            <div class="col-12">
+              <p class="text-left text-light">
+                Copyright &copy; 2024 Company Name | Designed by
+                <a rel="sponsored" href="#" target="_blank">Tech Cloud Ltd.</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/lebustore.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Script -->
+
+    <script>
+      const items = document.querySelectorAll(".product-filters ul li");
+      const products = document.querySelectorAll(".products .product");
+
+      items.forEach((item) => {
+        // Active
+        item.addEventListener("click", () => {
+          items.forEach((item) => {
+            item.classList.remove("active");
+          });
+          item.classList.add("active");
+
+          // Filter
+          const valueAttr = item.getAttribute("data-filter");
+          products.forEach((item) => {
+            item.style.display = "none";
+            if (
+              item.getAttribute("data-filter").toLowerCase() ==
+                valueAttr.toLowerCase() ||
+              valueAttr == "all"
+            ) {
+              item.style.display = "flex";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

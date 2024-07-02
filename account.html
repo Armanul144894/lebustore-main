@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lebustore</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.ico.png"
+    />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <script
+      src="https://kit.fontawesome.com/e09dd379d2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <section class="header-section">
+      <!-- Start Top Nav -->
+      <nav
+        class="navbar navbar-expand-lg bg-white navbar-light d-none d-lg-block"
+        id="lebustore_nav_top"
+      >
+        <div class="container text-light">
+          <div class="w-100 d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-center">
+              <a
+                class="navbar-brand text-success logo align-self-center"
+                href="home.html"
+              >
+                <img src="assets/img/logo-v1.png" class="" alt="" />
+              </a>
+
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Categories</option>
+                <option value="Mens">Mens</option>
+                <option value="Womens">Womens</option>
+                <option value="Other">Others</option>
+              </select>
+            </div>
+            <div class="d-flex justify-content-center align-items-center gap-4">
+              <a
+                class="text-dark text-decoration-none justify-content-center align-items-center d-flex gap-2 fs-6"
+                href="#"
+                target=""
+                rel="sponsored"
+                ><i class="fa-regular fa-heart fs-3"></i>My Wishlist</a
+              >
+              <a
+                class="text-dark text-decoration-none justify-content-center align-items-center d-flex gap-2 fs-6"
+                href="#"
+                target=""
+                rel="sponsored"
+                ><img src="assets/img/icon/ICon.png" class="" alt="" />Gift
+                Box</a
+              >
+              <a
+                class="text-dark text-decoration-none justify-content-center align-items-center d-flex gap-2 fs-6"
+                href="#"
+                target=""
+                rel="sponsored "
+                ><div class="position-relative">
+                  <img src="assets/img/icon/Icon2.png" class="" alt="" />
+                  <span class="cart-badge">1</span>
+                </div>
+
+                My Cart
+              </a>
+
+              <div class="dropdown">
+                <button
+                  class="btn btn-success dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-user"></i> User
+                </button>
+                <ul
+                  class="user-dropdown dropdown-menu"
+                  aria-labelledby="dropdownMenuButton1"
+                >
+                  <li>
+                    <div class="dropdown-item d-flex gap-3">
+                      <div>
+                        <img
+                          src="assets/img/AboutUs/Image3.png"
+                          class="rounded-circle img-thumbnail"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <h5 class="m-0">@user</h5>
+                        <p class="m-0 py-1" style="font-size: 16px !important">
+                          Md Nazvi Islam
+                        </p>
+                        <button class="btn btn-success rounded-pill px-4">
+                          Edit Profile
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <hr />
+                  <li>
+                    <a class="dropdown-item" href="account.html"
+                      ><i class="fas fa-user me-2"></i> Account</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="my-coupons.html"
+                      ><i class="fa-solid fa-money-bill me-2"></i> My Coupons</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-gift me-2"></i> My Giftcards</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-gift me-2"></i> My Offers</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="subscription.html"
+                      ><i class="fa-regular fa-credit-card me-2"></i>
+                      Subscription</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-regular fa-heart me-2"></i>My Wishlist</a
+                    >
+                  </li>
+                  <hr />
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-gear me-2"></i>Preferences</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-power-off me-2"></i>Login</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Close Top Nav -->
+      <!-- Header -->
+      <nav style="background-color: #3b4837" class="navbar navbar-expand-lg">
+        <div class="container d-flex align-items-center">
+          <a
+            class="navbar-brand text-success logo align-self-center d-block d-lg-none"
+            href="home.html"
+          >
+            <img
+              src="assets/img/lebustore-white-logo.png"
+              class="img-fluid"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#lebustore_main_nav"
+            aria-controls="lebustore_main_nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars text-white"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="lebustore_main_nav">
+            <ul
+              class="navbar-nav mr-auto w-100 justify-content-start align-items-lg-center gap-md-0 gap-xl-4"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Discounts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Coupons</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Offers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Partners</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+              </li>
+              <li class="nav-item d-block d-lg-none">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-success dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fas fa-user"></i> User
+                  </button>
+                  <ul
+                    class="user-dropdown dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <div class="dropdown-item d-flex gap-3">
+                        <div>
+                          <img
+                            src="assets/img/AboutUs/Image3.png"
+                            class="rounded-circle img-thumbnail"
+                            alt=""
+                          />
+                        </div>
+                        <div class="user-info">
+                          <h5 class="m-0">@user</h5>
+                          <p
+                            class="m-0 py-1"
+                            style="font-size: 16px !important"
+                          >
+                            Md Nazvi Islam
+                          </p>
+                          <button class="btn btn-success rounded-pill px-4">
+                            Edit Profile
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                    <hr />
+                    <li>
+                      <a class="dropdown-item" href="account.html"
+                        ><i class="fas fa-user me-2"></i> Account</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="my-coupons.html"
+                        ><i class="fa-solid fa-money-bill me-2"></i> My
+                        Coupons</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="fas fa-gift me-2"></i> My Giftcards</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="fas fa-gift me-2"></i> My Offers</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="subscription.html"
+                        ><i class="fa-regular fa-credit-card me-2"></i>
+                        Subscription</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="fa-regular fa-heart me-2"></i>My Wishlist</a
+                      >
+                    </li>
+                    <hr />
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="fa-solid fa-gear me-2"></i>Preferences</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="fa-solid fa-power-off me-2"></i>Login</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Close Header -->
+
+      <nav
+        class="navbar navbar-expand-lg border-bottom border-2 user-navbar d-none d-lg-block"
+      >
+        <div class="container d-flex align-items-center">
+          <div class="collapse navbar-collapse" id="lebustore_main_nav">
+            <ul
+              class="navbar-nav mr-auto w-100 user-navbar-item justify-content-start align-items-lg-center gap-md-0 gap-xl-4"
+            >
+              <li class="nav-item">
+                <a class="nav-link text-dark active" href="account.html"
+                  ><i class="fa-regular fa-user"></i> Account</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="my-coupons.html"
+                  ><i class="fa-solid fa-money-bill-1"></i> My Coupons</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#"
+                  ><i class="fa-solid fa-gift"></i> My Giftcards</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href=""
+                  ><i class="fa-solid fa-gift"></i> My Offers</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="subscription.html"
+                  ><i class="fa-solid fa-film"></i> Subscription</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#"
+                  ><i class="fa-regular fa-heart"></i> My Wishlist</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#"
+                  ><i class="fa-solid fa-gear"></i> Preferences</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade bg-white"
+      id="lebustore_search"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="w-100 pt-1 mb-5 text-right">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <form
+          action=""
+          method="get"
+          class="modal-content modal-body border-0 p-0"
+        >
+          <div class="input-group mb-2">
+            <input
+              type="text"
+              class="form-control"
+              id="inputModalSearch"
+              name="q"
+              placeholder="Search ..."
+            />
+            <button
+              type="submit"
+              class="input-group-text bg-success text-light"
+            >
+              <i class="fa fa-fw fa-search text-white"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card border-0">
+              <div class="card-body text-center py-5">
+                <div>
+                  <img
+                    src="assets/img/AboutUs/Image3.png"
+                    class="rounded-circle img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h5 class="m-0">@user</h5>
+                  <p class="m-0 py-1" style="font-size: 16px !important">
+                    Md Nazvi Islam
+                  </p>
+                  <button class="btn btn-success rounded-pill px-4">
+                    Edit Profile
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card border-0">
+              <div class="card-body p-4">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="pb-2">
+                      <h4>Account Data</h4>
+                    </div>
+
+                    <form class="row g-2">
+                      <div class="col-12">
+                        <label for="">First Name</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                      <div class="col-12">
+                        <label for="">Last Name</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                      <div class="col-12">
+                        <label for="">Email</label>
+                        <input type="email" class="form-control" />
+                        <a href="">Change Email</a>
+                      </div>
+                      <div class="col-12">
+                        <label for="">Username</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </form>
+
+                    <div class="pt-5">
+                      <h5>Change Your Password</h5>
+                      <form class="row g-2">
+                        <div class="col-12">
+                          <label for="">Current Password</label>
+                          <input type="password" class="form-control" />
+                          <a href="">Change Password</a>
+                        </div>
+                        <div class="col-12">
+                          <label for="">New Password</label>
+                          <input type="password" class="form-control" />
+                        </div>
+                      </form>
+                    </div>
+
+                    <div class="pt-4">
+                      <button class="btn btn-success rounded-pill">
+                        Save Changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Footer -->
+    <footer
+      class="bg-dark"
+      style="
+        background-image: url(assets/img/FooterImage.png);
+        background-size: cover;
+        background-position: center;
+      "
+      id="lebustore_footer"
+    >
+      <div class="py-5">
+        <div
+          class="container p-5"
+          style="background-color: rgba(24, 23, 23, 0.85)"
+        >
+          <div class="row text-light mb-4 align-items-center">
+            <div class="col-12 col-lg-6 me-auto footer-info">
+              <h3 class="text-white fw-normal">
+                Subscribe for the best deals!
+              </h3>
+              <p class="footer-info">
+                Step into the world of online discount with us.
+              </p>
+            </div>
+            <div class="col-12 col-lg-6">
+              <label class="sr-only" for="subscribeEmail text-white"
+                >Enter Email Address</label
+              >
+              <div class="input-group mb-2 position-relative">
+                <input
+                  type="text"
+                  class="form-control border-light text-white rounded-pill px-4 py-3"
+                  id="subscribeEmail"
+                  placeholder="Enter Email Address"
+                />
+                <div
+                  class="input-group-text subscribe-btn btn-success text-white fw-bold position-absolute rounded-pill px-3 px-md-5 py-3"
+                >
+                  Subscribe
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mb-3">
+              <div class="w-100 my-3 border-top border-light"></div>
+            </div>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-5">
+            <div class="col">
+              <a href="home.html" class="pb-3 border-light logo">
+                <img src="assets/img/lebustore-white-logo.png" alt="" />
+              </a>
+              <p class="py-3 footer-info text-justify">
+                It might should like a fairytale but with lebustore it's nothing
+                but the truth! where you can save, share and shop to your
+                heart's content.
+              </p>
+
+              <!-- <ul class="list-unstyled text-light footer-link-list">
+                <li>
+                  <i class="fas fa-map-marker-alt fa-fw"></i>
+                  123 Consectetur at ligula 10660
+                </li>
+                <li>
+                  <i class="fa fa-phone fa-fw"></i>
+                  <a class="text-decoration-none" href="tel:010-020-0340"
+                    >010-020-0340</a
+                  >
+                </li>
+                <li>
+                  <i class="fa fa-envelope fa-fw"></i>
+                  <a class="text-decoration-none" href="mailto:info@company.com"
+                    >info@company.com</a
+                  >
+                </li>
+              </ul> -->
+              <p class="text-left footer-info">
+                Copyright &copy; 2024 Company Name | Designed by
+                <a
+                  rel="sponsored"
+                  href="https://techcloudltd.com/"
+                  target="_blank"
+                  >Tech Cloud Ltd.</a
+                >
+              </p>
+            </div>
+
+            <div class="col">
+              <h5 class="text-white pb-3 border-light text-uppercase">
+                Important Links
+              </h5>
+              <ul class="list-unstyled footer-info footer-link-list">
+                <li>
+                  <a class="text-decoration-none" href="home.html">Home</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="about.html">About</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#">Discounts</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#">Coupons</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#">Offers</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#">Partners</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#">Contacts</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col">
+              <h5 class="text-white pb-3 border-light text-uppercase">
+                Categories
+              </h5>
+              <ul class="list-unstyled footer-info footer-link-list">
+                <li>
+                  <a class="text-decoration-none" href="#">Electronics</a>
+                </li>
+                <li><a class="text-decoration-none" href="#">Fashion</a></li>
+                <li><a class="text-decoration-none" href="#">FMCG</a></li>
+                <li>
+                  <a class="text-decoration-none" href="#">Groceries</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#">Shoes</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#">Beauty</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#">Resort</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <h5 class="text-white pb-3 border-light text-uppercase">
+                Follow Us
+              </h5>
+              <ul class="list-inline text-left footer-icons">
+                <li
+                  class="list-inline-item border border-light rounded-circle text-center bg-lightgreen"
+                >
+                  <a
+                    class="text-dark text-decoration-none"
+                    target="_blank"
+                    href="http://facebook.com/"
+                    ><i class="fab fa-facebook-f fa-lg fa-fw"></i
+                  ></a>
+                </li>
+                <li
+                  class="list-inline-item border border-light rounded-circle text-center bg-lightgreen"
+                >
+                  <a
+                    class="text-dark text-decoration-none"
+                    target="_blank"
+                    href="https://www.instagram.com/"
+                    ><i class="fab fa-instagram fa-lg fa-fw"></i
+                  ></a>
+                </li>
+                <li
+                  class="list-inline-item border border-light rounded-circle text-center bg-lightgreen"
+                >
+                  <a
+                    class="text-dark text-decoration-none"
+                    target="_blank"
+                    href="https://twitter.com/"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                </li>
+                <li
+                  class="list-inline-item border border-light rounded-circle text-center bg-lightgreen"
+                >
+                  <a
+                    class="text-dark text-decoration-none"
+                    target="_blank"
+                    href="https://www.linkedin.com/"
+                    ><i class="fab fa-linkedin fa-lg fa-fw"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="w-100 bg-black py-3">
+        <div class="container">
+          <div class="row pt-2">
+            <div class="col-12">
+              <p class="text-left text-light">
+                Copyright &copy; 2024 Company Name | Designed by
+                <a rel="sponsored" href="#" target="_blank">Tech Cloud Ltd.</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/lebustore.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Script -->
+  </body>
+</html>

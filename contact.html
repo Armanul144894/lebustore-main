@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lebustore- Contact</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.ico.png"
+    />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap"
+    />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+
+    <!-- Load map styles -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+  </head>
+
+  <body>
+    <section class="header-section">
+      <!-- Start Top Nav -->
+      <nav
+        class="navbar navbar-expand-lg bg-white navbar-light d-none d-lg-block"
+        id="lebustore_nav_top"
+      >
+        <div class="container text-light">
+          <div class="w-100 d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-center">
+              <a
+                class="navbar-brand text-success logo align-self-center"
+                href="home.html"
+              >
+                <img src="assets/img/logo-v1.png" class="" alt="" />
+              </a>
+
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Categories</option>
+                <option value="Mens">Mens</option>
+                <option value="Womens">Womens</option>
+                <option value="Other">Others</option>
+              </select>
+            </div>
+            <div class="d-flex justify-content-center align-items-center gap-4">
+              <a
+                class="text-dark text-decoration-none justify-content-center align-items-center d-flex gap-2 fs-6"
+                href="#"
+                target=""
+                rel="sponsored"
+                ><i class="fa-regular fa-heart fs-3"></i>My Wishlist</a
+              >
+              <a
+                class="text-dark text-decoration-none justify-content-center align-items-center d-flex gap-2 fs-6"
+                href="#"
+                target=""
+                rel="sponsored"
+                ><img src="assets/img/icon/ICon.png" class="" alt="" />Gift
+                Box</a
+              >
+              <a
+                class="text-dark text-decoration-none justify-content-center align-items-center d-flex gap-2 fs-6"
+                href="#"
+                target=""
+                rel="sponsored "
+                ><div class="position-relative">
+                  <img src="assets/img/icon/Icon2.png" class="" alt="" />
+                  <span class="cart-badge">1</span>
+                </div>
+
+                My Cart
+              </a>
+
+              <div class="dropdown">
+                <button
+                  class="btn btn-success dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-user"></i> User
+                </button>
+                <ul
+                  class="user-dropdown dropdown-menu"
+                  aria-labelledby="dropdownMenuButton1"
+                >
+                  <li>
+                    <div class="dropdown-item d-flex gap-3">
+                      <div>
+                        <img
+                          src="assets/img/AboutUs/Image3.png"
+                          class="rounded-circle img-thumbnail"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <h5 class="m-0">@user</h5>
+                        <p class="m-0 py-1" style="font-size: 16px !important">
+                          Md Nazvi Islam
+                        </p>
+                        <button class="btn btn-success rounded-pill px-4">
+                          Edit Profile
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <hr />
+                  <li>
+                    <a class="dropdown-item" href="account.html"
+                      ><i class="fas fa-user me-2"></i> Account</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="my-coupons.html"
+                      ><i class="fa-solid fa-money-bill me-2"></i> My Coupons</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-gift me-2"></i> My Giftcards</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-gift me-2"></i> My Offers</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="subscription.html"
+                      ><i class="fa-regular fa-credit-card me-2"></i>
+                      Subscription</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-regular fa-heart me-2"></i>My Wishlist</a
+                    >
+                  </li>
+                  <hr />
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-gear me-2"></i>Preferences</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-power-off me-2"></i>Login</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Close Top Nav -->
+      <!-- Header -->
+      <nav style="background-color: #3b4837" class="navbar navbar-expand-lg">
+        <div class="container d-flex align-items-center">
+          <a
+            class="navbar-brand text-success logo align-self-center d-block d-lg-none"
+            href="home.html"
+          >
+            <img
+              src="assets/img/lebustore-white-logo.png"
+              class="img-fluid"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#lebustore_main_nav"
+            aria-controls="lebustore_main_nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars text-white"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="lebustore_main_nav">
+            <ul
+              class="navbar-nav mr-auto w-100 justify-content-start align-items-lg-center gap-md-0 gap-xl-4"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" href="home.html">Discounts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Coupons</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Offers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Partners</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+              </li>
+              <li class="nav-item d-block d-lg-none">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-success dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fas fa-user"></i> User
+                  </button>
+                  <ul
+                    class="user-dropdown dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <div class="dropdown-item d-flex gap-3">
+                        <div>
+                          <img
+                            src="assets/img/AboutUs/Image3.png"
+                            class="rounded-circle img-thumbnail"
+                            alt=""
+                          />
+                        </div>
+                        <div class="user-info">
+                          <h5 class="m-0">@user</h5>
+                          <p
+                            class="m-0 py-1"
+                            style="font-size: 16px !important"
+                          >
+                            Md Nazvi Islam
+                          </p>
+                          <button class="btn btn-success rounded-pill px-4">
+                            Edit Profile
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                    <hr />
+                    <li>
+                      <a class="dropdown-item" href="account.html"
+                        ><i class="fas fa-user me-2"></i> Account</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="my-coupons.html"
+                        ><i class="fa-solid fa-money-bill me-2"></i> My
+                        Coupons</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="fas fa-gift me-2"></i> My Giftcards</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="fas fa-gift me-2"></i> My Offers</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="subscription.html"
+                        ><i class="fa-regular fa-credit-card me-2"></i>
+                        Subscription</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="fa-regular fa-heart me-2"></i>My Wishlist</a
+                      >
+                    </li>
+                    <hr />
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="fa-solid fa-gear me-2"></i>Preferences</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        ><i class="fa-solid fa-power-off me-2"></i>Login</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Close Header -->
+    </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade bg-white"
+      id="lebustore_search"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="w-100 pt-1 mb-5 text-right">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <form
+          action=""
+          method="get"
+          class="modal-content modal-body border-0 p-0"
+        >
+          <div class="input-group mb-2">
+            <input
+              type="text"
+              class="form-control"
+              id="inputModalSearch"
+              name="q"
+              placeholder="Search ..."
+            />
+            <button
+              type="submit"
+              class="input-group-text bg-success text-light"
+            >
+              <i class="fa fa-fw fa-search text-white"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Start Content Page -->
+    <div class="container-fluid bg-light py-5">
+      <div class="col-md-6 m-auto text-center">
+        <h1 class="h1">Contact Us</h1>
+        <p>
+          Proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum. Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+    </div>
+
+    <!-- Start Map -->
+    <div id="mapid" style="width: 100%; height: 300px"></div>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script>
+      var mymap = L.map("mapid").setView([-23.013104, -43.394365, 13], 13);
+
+      L.tileLayer(
+        "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw",
+        {
+          maxZoom: 18,
+
+          id: "mapbox/streets-v11",
+          tileSize: 512,
+          zoomOffset: -1,
+        }
+      ).addTo(mymap);
+
+      L.marker([-23.013104, -43.394365, 13])
+        .addTo(mymap)
+        .bindPopup("<b>Lebustore</b>")
+        .openPopup();
+
+      mymap.scrollWheelZoom.disable();
+      mymap.touchZoom.disable();
+    </script>
+    <!-- Ena Map -->
+
+    <!-- Start Contact -->
+    <div class="container py-5">
+      <div class="row py-5">
+        <form class="col-md-9 m-auto" method="post" role="form">
+          <div class="row">
+            <div class="form-group col-md-6 mb-3">
+              <label for="inputname">Name</label>
+              <input
+                type="text"
+                class="form-control mt-1"
+                id="name"
+                name="name"
+                placeholder="Name"
+              />
+            </div>
+            <div class="form-group col-md-6 mb-3">
+              <label for="inputemail">Email</label>
+              <input
+                type="email"
+                class="form-control mt-1"
+                id="email"
+                name="email"
+                placeholder="Email"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="inputsubject">Subject</label>
+            <input
+              type="text"
+              class="form-control mt-1"
+              id="subject"
+              name="subject"
+              placeholder="Subject"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="inputmessage">Message</label>
+            <textarea
+              class="form-control mt-1"
+              id="message"
+              name="message"
+              placeholder="Message"
+              rows="8"
+            ></textarea>
+          </div>
+          <div class="row">
+            <div class="col text-end mt-2">
+              <button type="submit" class="btn btn-success btn-lg px-3">
+                Let’s Talk
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End Contact -->
+
+    <!-- Start Footer -->
+    <footer
+      class="bg-dark"
+      style="
+        background-image: url(assets/img/FooterImage.png);
+        background-size: cover;
+        background-position: center;
+      "
+      id="lebustore_footer"
+    >
+      <div class="py-5">
+        <div
+          class="container p-5"
+          style="background-color: rgba(0, 0, 0, 0.85)"
+        >
+          <div class="row text-light mb-4 align-items-center">
+            <div class="col-12 col-lg-6 me-auto">
+              <h2>Subscribe for the best deals!</h2>
+              <p class="text-muted">
+                Step into the world of online discount with us.
+              </p>
+            </div>
+            <div class="col-12 col-lg-6">
+              <label class="sr-only" for="subscribeEmail text-white"
+                >Email address</label
+              >
+              <div class="input-group mb-2 position-relative">
+                <input
+                  type="text"
+                  class="form-control bg-light border-light text-white rounded-pill px-4 py-2"
+                  id="subscribeEmail"
+                  placeholder="Email address"
+                />
+                <div
+                  class="input-group-text subscribe-btn btn-success text-white fw-bold position-absolute rounded-pill px-3 px-md-5 py-2"
+                >
+                  Subscribe
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mb-3">
+              <div class="w-100 my-3 border-top border-light"></div>
+            </div>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-5">
+            <div class="col">
+              <a href="index.html" class="text-success pb-3 border-light logo">
+                <img src="assets/img/LebuStore.png" alt="" />
+              </a>
+              <p class="text-white py-3 footer-info text-justify">
+                It might should like a fairytale but with lebustore it's nothing
+                but the truth! where you can save, share and shop to your
+                heart's content.
+              </p>
+              <!-- <ul class="list-unstyled text-light footer-link-list">
+                <li>
+                  <i class="fas fa-map-marker-alt fa-fw"></i>
+                  123 Consectetur at ligula 10660
+                </li>
+                <li>
+                  <i class="fa fa-phone fa-fw"></i>
+                  <a class="text-decoration-none" href="tel:010-020-0340"
+                    >010-020-0340</a
+                  >
+                </li>
+                <li>
+                  <i class="fa fa-envelope fa-fw"></i>
+                  <a class="text-decoration-none" href="mailto:info@company.com"
+                    >info@company.com</a
+                  >
+                </li>
+              </ul> -->
+              <p class="text-left text-light pt-4">
+                Copyright &copy; 2024 Company Name | Designed by
+                <a
+                  rel="sponsored"
+                  href="https://techcloudltd.com/"
+                  target="_blank"
+                  >Tech Cloud Ltd.</a
+                >
+              </p>
+            </div>
+
+            <div class="col">
+              <h3 class="h3 text-light pb-3 border-light text-uppercase">
+                Important Links
+              </h3>
+              <ul class="list-unstyled text-light footer-link-list">
+                <li>
+                  <a class="text-decoration-none" href="index.html">Home</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="about.html">About</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="shop.html">Discounts</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="shop.html">Coupons</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="product-details.html"
+                    >Offers</a
+                  >
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#">Partners</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="contact.html"
+                    >Contacts</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col">
+              <h3 class="h3 text-light pb-3 border-light text-uppercase">
+                Categories
+              </h3>
+              <ul class="list-unstyled text-light footer-link-list">
+                <li>
+                  <a class="text-decoration-none" href="#">Electronics</a>
+                </li>
+                <li><a class="text-decoration-none" href="#">Fashion</a></li>
+                <li><a class="text-decoration-none" href="#">FMCG</a></li>
+                <li>
+                  <a class="text-decoration-none" href="#">Groceries</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#">Shoes</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#">Beauty</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="#">Resort</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <h3 class="h3 text-light pb-3 border-light text-uppercase">
+                Follow Us
+              </h3>
+              <ul class="list-inline text-left footer-icons">
+                <li
+                  class="list-inline-item border border-light rounded-circle text-center bg-warning"
+                >
+                  <a
+                    class="text-dark text-decoration-none"
+                    target="_blank"
+                    href="http://facebook.com/"
+                    ><i class="fab fa-facebook-f fa-lg fa-fw"></i
+                  ></a>
+                </li>
+                <li
+                  class="list-inline-item border border-light rounded-circle text-center bg-warning"
+                >
+                  <a
+                    class="text-dark text-decoration-none"
+                    target="_blank"
+                    href="https://www.instagram.com/"
+                    ><i class="fab fa-instagram fa-lg fa-fw"></i
+                  ></a>
+                </li>
+                <li
+                  class="list-inline-item border border-light rounded-circle text-center bg-warning"
+                >
+                  <a
+                    class="text-dark text-decoration-none"
+                    target="_blank"
+                    href="https://twitter.com/"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                </li>
+                <li
+                  class="list-inline-item border border-light rounded-circle text-center bg-warning"
+                >
+                  <a
+                    class="text-dark text-decoration-none"
+                    target="_blank"
+                    href="https://www.linkedin.com/"
+                    ><i class="fab fa-linkedin fa-lg fa-fw"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="w-100 bg-black py-3">
+        <div class="container">
+          <div class="row pt-2">
+            <div class="col-12">
+              <p class="text-left text-light">
+                Copyright &copy; 2024 Company Name | Designed by
+                <a rel="sponsored" href="#" target="_blank">Tech Cloud Ltd.</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/lebustore.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Script -->
+  </body>
+</html>

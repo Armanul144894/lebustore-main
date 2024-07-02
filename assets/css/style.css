@@ -1,0 +1,317 @@
+/*
+
+---------------------------------------------
+Table of contents
+------------------------------------------------
+1. Typography
+2. General
+3. Nav
+4. Hero Carousel
+5. Accordion
+6. Shop
+7. Product
+8. Carousel Hero
+9. Carousel Brand
+10. Services
+11. Contact map
+12. Footer
+13. Small devices (landscape phones, 576px and up)
+14. Medium devices (tablets, 768px and up)
+15. Large devices (desktops, 992px and up)
+16. Extra large devices (large desktops, 1200px and up)
+--------------------------------------------- */
+
+/* Typography */
+body,
+ul,
+li,
+p,
+a,
+label,
+input,
+div {
+  font-family: "lato";
+}
+.h1 {
+  font-family: "lato" !important;
+  font-size: 60px !important;
+  font-weight: 700 !important;
+}
+.h2 {
+  font-family: "lato" !important;
+  font-size: 30px !important;
+  font-weight: 300;
+}
+.h3 {
+  font-family: "lato" !important;
+  font-size: 22px !important;
+}
+
+p{
+  font-family: "lato" !important;
+  font-size: 20px !important;
+}
+a{
+  text-decoration: none;
+  color: #6182b4;
+}
+/* General */
+.logo img{
+  font-weight: 500 !important;
+  width:125px !important;
+  object-fit: cover;
+  height: auto;
+}
+.text-warning {
+  color: #ede861 !important;
+}
+.text-muted {
+  color: #bcbcbc !important;
+}
+.text-success {
+  color: #26973d !important;
+}
+.text-light {
+  color: #cfd6e1 !important;
+}
+.bg-dark {
+  background-color: #212934 !important;
+}
+.bg-light {
+  background-color: #eaebef !important;
+}
+.bg-black {
+  background-color: #1d242d !important;
+}
+.bg-success {
+  background-color: #26973d !important;
+}
+.btn-success {
+  background-color: #26973d !important;
+  border-color: #26973d !important;
+}
+.pagination .page-link:hover {
+  color: #000;
+}
+.pagination .page-link:hover,
+.pagination .page-link.active {
+  background-color: #69bb7e;
+  color: #fff;
+}
+/* Nav */
+
+#lebustore_main_nav a {
+  font-family: "lato" !important;
+  color: #ffffff;
+  font-size: 18px !important;
+  font-weight: 600;
+}
+
+#lebustore_main_nav a:hover {
+  color: #c7e99f;
+}
+
+#lebustore_main_nav .active{
+  color: #c7e99f !important;
+}
+#lebustore_main_nav .user-navbar-item .active{
+  color: blue !important;
+}
+#lebustore_main_nav .navbar .nav-icon {
+  margin-right: 20px;
+}
+
+/* Hero Carousel */
+#Lebustore-hero-carousel {
+  background: #ffffff !important;
+}
+/* Accordion */
+.lebustore-accordion a {
+  color: #000;
+}
+.lebustore-accordion a:hover {
+  color: #333d4a;
+}
+/* Shop */
+.shop-top-menu a:hover {
+  color: #69bb7e !important;
+}
+/* Product */
+.product-wap {
+  /* box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1); */
+  border-radius: 10px !important;
+}
+ 
+.product-wap .card{
+  border-radius: 10px !important;
+}
+.product-wap .card img{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.product-wap .product-color-dot.color-dot-red {
+  background: #f71515;
+}
+.product-wap .product-color-dot.color-dot-blue {
+  background: #6db4fe;
+}
+.product-wap .product-color-dot.color-dot-black {
+  background: #000000;
+}
+.product-wap .product-color-dot.color-dot-light {
+  background: #e0e0e0;
+}
+.product-wap .product-color-dot.color-dot-green {
+  background: #0bff7e;
+}
+.card.product-wap .card .product-overlay {
+  background: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.8s;
+}
+.card.product-wap:hover .card .product-overlay {
+  visibility: visible;
+  background-color: #000000af;
+  opacity: 1;
+}
+.card.product-wap a {
+  color: #000;
+}
+#carousel-related-product .slick-slide:focus {
+  outline: none !important;
+}
+#carousel-related-product .slick-dots li button:before {
+  font-size: 15px;
+  margin-top: 20px;
+}
+/* Brand */
+.brand-img {
+  /* filter: grayscale(100%);
+  opacity: 0.5; */
+  transition: 0.5s;
+}
+.brand-img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+/* Carousel Hero */
+#Lebustore-hero-carousel .carousel-indicators li {
+  margin-top: -50px;
+  background-color: white;
+  
+}
+#Lebustore-hero-carousel .carousel-control-next i,
+#Lebustore-hero-carousel .carousel-control-prev i {
+  color: green !important;
+  font-size: 2.8em !important;
+  opacity: 1;
+}
+/* Carousel Brand */
+.lebustore-carousel .h1 {
+  font-size: 0.5em !important;
+  color: #000 !important;
+}
+/* Services */
+.services-icon-wap {
+  background-color: white;
+  transition: 0.3s;
+}
+.services-icon-wap:hover,
+.services-icon-wap:hover i {
+  color: #fff;
+}
+.services-icon-wap:hover {
+  background: #69bb7e;
+}
+/* Contact map */
+.leaflet-control a,
+.leaflet-control {
+  font-size: 10px !important;
+}
+.form-control {
+  border: 1px solid #e8e8e8;
+}
+/* Footer */
+#lebustore_footer a {
+  color: #dcdde1;
+}
+#lebustore_footer a:hover {
+  color: #68bb7d;
+}
+#lebustore_footer ul.footer-link-list li {
+  padding-top: 10px;
+}
+#lebustore_footer ul.footer-link-list li a{
+  font-size: 18px !important;
+  font-weight: normal;
+}
+#lebustore_footer ul.footer-icons li {
+  width: 2.6em;
+  height: 2.6em;
+  line-height: 2.6em;
+}
+#lebustore_footer ul.footer-icons li:hover {
+  background-color: #cfd6e1;
+  transition: 0.5s;
+}
+#lebustore_footer ul.footer-icons li:hover i {
+  color: #212934;
+  transition: 0.5s;
+}
+#lebustore_footer .border-light {
+  border-color: #2d343f !important;
+}
+/*
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+*/
+/* Small devices (landscape phones, 576px and up)*/
+.product-wap .h3,
+.product-wap li,
+.product-wap i,
+.product-wap p {
+  font-size: 18px !important;
+}
+
+.product-wap .product-color-dot {
+  width: 6px;
+  height: 6px;
+}
+
+@media (min-width: 576px) {
+  .lebustore-carousel .h1 {
+    font-size: 1em !important;
+  }
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+/* @media (min-width: 768px) {
+  #lebustore_main_nav .navbar-nav {
+    max-width: 450px;
+  }
+} */
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  /* #lebustore_main_nav .navbar-nav {
+    max-width: 550px;
+  } */
+  /* #Lebustore-hero-carousel .carousel-item {
+    min-height: 30rem !important;
+  } */
+  .product-wap .h3,
+  .product-wap li,
+  .product-wap i,
+  .product-wap p {
+    font-size: 18px !important;
+  }
+  .product-wap .product-color-dot {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+}
