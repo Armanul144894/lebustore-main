@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Lebustore</title>
+    <title>Lebustore-Wishlist</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -180,7 +180,7 @@
       <!-- Header -->
       <nav style="background-color: #3b4837" class="navbar navbar-expand-lg">
         <div class="container d-flex align-items-center">
-          <div class="d-flex justify-content-between align-items-center d-block d-lg-none">
+          <!-- <div class="d-flex justify-content-between align-items-center d-block d-lg-none">
             <a
               class="navbar-brand text-success logo align-self-center"
               href="home.html"
@@ -190,6 +190,27 @@
             class="img-fluid"
             alt=""
           />
+            </a>
+
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Categories</option>
+              <option value="Mens">Mens</option>
+              <option value="Womens">Womens</option>
+              <option value="Other">Others</option>
+            </select>
+          </div> -->
+          <div
+            class="d-flex justify-content-between align-items-center d-block d-lg-none"
+          >
+            <a
+              class="navbar-brand text-success logo align-self-center"
+              href="home.html"
+            >
+              <img
+                src="assets/img/lebustore-white-logo.png"
+                class="img-fluid"
+                alt=""
+              />
             </a>
 
             <select class="form-select" aria-label="Default select example">
@@ -231,7 +252,7 @@
                 <a class="nav-link" href="#">Partners</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contacts</a>
+                <a class="nav-link active" href="contact.html">Contacts</a>
               </li>
               <li class="nav-item d-block d-lg-none">
                 <div class="dropdown">
@@ -324,54 +345,6 @@
       </nav>
 
       <!-- Close Header -->
-
-      <nav
-        class="navbar navbar-expand-lg border-bottom border-2 user-navbar d-none d-lg-block"
-      >
-        <div class="container d-flex align-items-center">
-          <div class="collapse navbar-collapse" id="lebustore_main_nav">
-            <ul
-              class="navbar-nav mr-auto w-100 user-navbar-item justify-content-start align-items-lg-center gap-md-0 gap-xl-4"
-            >
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="account.html"
-                  ><i class="fa-regular fa-user"></i> Account</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="my-coupons.html"
-                  ><i class="fa-solid fa-money-bill-1"></i> My Coupons</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="#"
-                  ><i class="fa-solid fa-gift"></i> My Giftcards</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" href=""
-                  ><i class="fa-solid fa-gift"></i> My Offers</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark active" href="subscription.html"
-                  ><i class="fa-solid fa-film"></i> Subscription</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="#"
-                  ><i class="fa-regular fa-heart"></i> My Wishlist</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="#"
-                  ><i class="fa-solid fa-gear"></i> Preferences</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
     </section>
 
     <!-- Modal -->
@@ -416,112 +389,124 @@
       </div>
     </div>
 
-    <section class="py-5 bg-light">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-lg-8">
-            <div class="card border-0">
-              <div class="card-body p-4">
-                <div class="">
-                  <div class="pb-3">
-                    <h4>My Subscription</h4>
-                  </div>
+    <!-- Start Content Page -->
+    <div class="container-fluid bg-light py-5">
+      <div class="col-md-6 m-auto text-center">
+        <h1 class="h1">My Wishlist</h1>
+      </div>
+    </div>
 
-                  <div>
-                    <h5>Current Plan</h5>
-                    <div class="card">
-                      <div class="card-body p-4">
-                        <div
-                          class="d-flex flex-column flex-md-row justify-content-between align-content-lg-center align-items-start pb-2"
-                        >
-                          <h6>
-                            LebuStore
-                            <span class="text-success"
-                              ><i class="fa fa-crown"></i> Premium Plan</span
-                            >
-                          </h6>
-                          <div>
-                            <a href="" class="text-primary">Purchase Plan</a>
+    <section>
+      <div class="cart-wrap">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="table-wishlist table-responsive">
+                <table class="table" cellpadding="0" cellspacing="0" border="0" width="100%">
+                  <thead>
+                    <tr>
+                      <th width="45%">Product Name</th>
+                      <th width="15%">Unit Price</th>
+                      <th width="15%">Stock Status</th>
+                      <th width="15%"></th>
+                      <th width="10%"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td width="45%">
+                        <div class="display-flex align-center">
+                          <div class="img-product">
+                            <img
+                              src="assets/img/coupon/Yellow.png"
+                              alt=""
+                              class="mCS_img_loaded"
+                            />
                           </div>
+                          <div class="name-product">Yellow Bangladesh</div>
                         </div>
-                        <div
-                          class="d-flex flex-column flex-md-row justify-content-between align-content-lg-center align-items-start"
-                        >
-                          <p style="font-size: 16px !important" class="mb-0">
-                            Your Subscription ends on July 1st, 2024
-                          </p>
-                          <div>
-                            <a href="" class="text-primary">Cancel Your Plan</a>
+                      </td>
+                      <td width="15%" class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i>110.00</td>
+                      <td width="15%">
+                        <span class="in-stock-box">In Stock</span>
+                      </td>
+                      <td width="15%">
+                        <button class="round-black-btn small-btn">
+                          Add to Cart
+                        </button>
+                      </td>
+                      <td width="10%" class="text-center">
+                        <a href="#" class="trash-icon"
+                          ><i class="far fa-trash-alt"></i
+                        ></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="45%">
+                        <div class="display-flex align-center">
+                          <div class="img-product">
+                            <img
+                              src="assets/img/coupon/aarong.png"
+                              alt=""
+                              class="mCS_img_loaded"
+                            />
                           </div>
+                          <div class="name-product">AArong Bangladesh</div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="py-5">
-                    <h5>Billing History</h5>
-                    <div class="card">
-                      <div class="card-body p-4">
-                        <div
-                          class="d-flex flex-column flex-md-row justify-content-between align-content-lg-center align-items-start pb-2"
-                        >
-                          <p style="font-size: 16px" class="mb-0">
-                            Md Nazvl Islam
-                          </p>
-                          <div>
-                            <a href="" class="text-primary">Billing History</a>
+                      </td>
+                      <td width="15%" class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i>110.00</td>
+                      <td width="15%">
+                        <span class="in-stock-box">In Stock</span>
+                      </td>
+                      <td width="15%">
+                        <button class="round-black-btn small-btn btn">
+                          Add to Cart
+                        </button>
+                      </td>
+                      <td width="10%" class="text-center">
+                        <a href="#" class="trash-icon"
+                          ><i class="far fa-trash-alt"></i
+                        ></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td width="45%">
+                        <div class="display-flex align-center">
+                          <div class="img-product">
+                            <img
+                              src="assets/img/coupon/bata.png"
+                              alt=""
+                              class="mCS_img_loaded"
+                            />
                           </div>
+                          <div class="name-product">Bata Bangladesh</div>
                         </div>
-                        <div
-                          class="d-flex flex-column flex-md-row justify-content-between align-content-lg-center align-items-start"
-                        >
-                          <p style="font-size: 16px" class="mb-0">
-                            nazvlislam@gmail.com
-                          </p>
-                          <div>
-                            <a href="" class="text-primary"
-                              >Modify Billing Information</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="pb-5">
-                    <h5>Payment Details</h5>
-                    <div class="card">
-                      <div class="card-body p-4">
-                        <div
-                          class="d-flex flex-column flex-md-row justify-content-between align-content-lg-center align-items-start pb-2"
-                        >
-                          <p style="font-size: 16px" class="mb-0">
-                            <i class="fa fa-credit-card"></i> ***********4562
-                          </p>
-                          <div>
-                            <a href="" class="text-primary">Payment History</a>
-                          </div>
-                        </div>
-                        <div
-                          class="d-flex flex-column flex-md-row justify-content-between align-content-lg-center align-items-start"
-                        >
-                          <p style="font-size: 16px" class="mb-0"></p>
-                          <div>
-                            <a href="" class="text-primary"
-                              >Update Billing Information</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                      </td>
+                      <td width="15%" class="price"><i class="fa-solid fa-bangladeshi-taka-sign"></i>110.00</td>
+                      <td width="15%">
+                        <span class="in-stock-box">In Stock</span>
+                      </td>
+                      <td width="15%">
+                        <button class="round-black-btn small-btn">
+                          Add to Cart
+                        </button>
+                      </td>
+                      <td width="10%" class="text-center">
+                        <a href="#" class="trash-icon"
+                          ><i class="far fa-trash-alt"></i
+                        ></a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- End Contact -->
 
     <!-- Start Footer -->
     <footer
@@ -575,7 +560,7 @@
               <a href="home.html" class="pb-3 border-light logo">
                 <img src="assets/img/lebustore-white-logo.png" alt="" />
               </a>
-              <p class="pt-3 footer-info text-justify">
+              <p class="py-3 footer-info text-justify">
                 It might should like a fairytale but with lebustore it's nothing
                 but the truth! where you can save, share and shop to your
                 heart's content.
@@ -599,7 +584,7 @@
                   >
                 </li>
               </ul> -->
-              <p class="text-left footer-info">
+              <p class="text-left pt-4 footer-info">
                 Copyright &copy; 2024 Company Name | Designed by
                 <a
                   rel="sponsored"
@@ -737,7 +722,6 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
     <script src="assets/js/jquery-1.11.0.min.js"></script>
     <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>

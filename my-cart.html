@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Lebustore</title>
+    <title>Lebustore-Cart</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -180,7 +180,7 @@
       <!-- Header -->
       <nav style="background-color: #3b4837" class="navbar navbar-expand-lg">
         <div class="container d-flex align-items-center">
-          <div class="d-flex justify-content-between align-items-center d-block d-lg-none">
+          <!-- <div class="d-flex justify-content-between align-items-center d-block d-lg-none">
             <a
               class="navbar-brand text-success logo align-self-center"
               href="home.html"
@@ -190,6 +190,27 @@
             class="img-fluid"
             alt=""
           />
+            </a>
+
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Categories</option>
+              <option value="Mens">Mens</option>
+              <option value="Womens">Womens</option>
+              <option value="Other">Others</option>
+            </select>
+          </div> -->
+          <div
+            class="d-flex justify-content-between align-items-center d-block d-lg-none"
+          >
+            <a
+              class="navbar-brand text-success logo align-self-center"
+              href="home.html"
+            >
+              <img
+                src="assets/img/lebustore-white-logo.png"
+                class="img-fluid"
+                alt=""
+              />
             </a>
 
             <select class="form-select" aria-label="Default select example">
@@ -231,7 +252,7 @@
                 <a class="nav-link" href="#">Partners</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contacts</a>
+                <a class="nav-link active" href="contact.html">Contacts</a>
               </li>
               <li class="nav-item d-block d-lg-none">
                 <div class="dropdown">
@@ -324,54 +345,6 @@
       </nav>
 
       <!-- Close Header -->
-
-      <nav
-        class="navbar navbar-expand-lg border-bottom border-2 user-navbar d-none d-lg-block"
-      >
-        <div class="container d-flex align-items-center">
-          <div class="collapse navbar-collapse" id="lebustore_main_nav">
-            <ul
-              class="navbar-nav mr-auto w-100 user-navbar-item justify-content-start align-items-lg-center gap-md-0 gap-xl-4"
-            >
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="account.html"
-                  ><i class="fa-regular fa-user"></i> Account</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="my-coupons.html"
-                  ><i class="fa-solid fa-money-bill-1"></i> My Coupons</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="#"
-                  ><i class="fa-solid fa-gift"></i> My Giftcards</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" href=""
-                  ><i class="fa-solid fa-gift"></i> My Offers</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark active" href="subscription.html"
-                  ><i class="fa-solid fa-film"></i> Subscription</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="#"
-                  ><i class="fa-regular fa-heart"></i> My Wishlist</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="#"
-                  ><i class="fa-solid fa-gear"></i> Preferences</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
     </section>
 
     <!-- Modal -->
@@ -416,105 +389,282 @@
       </div>
     </div>
 
-    <section class="py-5 bg-light">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-lg-8">
-            <div class="card border-0">
-              <div class="card-body p-4">
-                <div class="">
-                  <div class="pb-3">
-                    <h4>My Subscription</h4>
-                  </div>
+    <!-- Start Content Page -->
+    <div class="container-fluid bg-light py-5">
+      <div class="col-md-6 m-auto text-center">
+        <h1 class="h1">Shopping Cart</h1>
+      </div>
+    </div>
 
-                  <div>
-                    <h5>Current Plan</h5>
-                    <div class="card">
-                      <div class="card-body p-4">
-                        <div
-                          class="d-flex flex-column flex-md-row justify-content-between align-content-lg-center align-items-start pb-2"
-                        >
-                          <h6>
-                            LebuStore
-                            <span class="text-success"
-                              ><i class="fa fa-crown"></i> Premium Plan</span
-                            >
-                          </h6>
-                          <div>
-                            <a href="" class="text-primary">Purchase Plan</a>
+    <section class="py-5 container">
+      <div class="row g-4">
+        <div class="card col-lg-8">
+          <div class="row justify-content-center card-body">
+            <div class="col-md-12">
+              <div class="table-responsive">
+                <table id="myTable" class="table">
+                  <thead>
+                    <tr>
+                      <th>Product</th>
+                      <th>Name</th>
+                      <th>Qty</th>
+                      <th>Price</th>
+                      <th class="text-start">
+                        <span id="amount" class="amount">Amount</span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="product-img">
+                          <div class="img-prdct">
+                            <img src="assets/img/coupon/aarong.png" />
                           </div>
                         </div>
-                        <div
-                          class="d-flex flex-column flex-md-row justify-content-between align-content-lg-center align-items-start"
-                        >
-                          <p style="font-size: 16px !important" class="mb-0">
-                            Your Subscription ends on July 1st, 2024
-                          </p>
-                          <div>
-                            <a href="" class="text-primary">Cancel Your Plan</a>
+                      </td>
+                      <td>
+                        <p class="product-title">
+                          Aarong Summer sale offer upto 20% OFF With Coupon &
+                          Promo Codes
+                        </p>
+                      </td>
+                      <td>
+                        <div class="button-container">
+                          <button class="cart-qty-plus" type="button" value="+">
+                            +
+                          </button>
+                          <input
+                            type="text"
+                            name="qty"
+                            min="0"
+                            class="qty form-control"
+                            value="0"
+                          />
+                          <button
+                            class="cart-qty-minus"
+                            type="button"
+                            value="-"
+                          >
+                            -
+                          </button>
+                        </div>
+                      </td>
+                      <td>
+                        <input
+                          type="text"
+                          value="300"
+                          class="price form-control"
+                          disabled
+                        />
+                      </td>
+                      <td align="center">
+                        <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                        <span id="amount" class="amount">0</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="product-img">
+                          <div class="img-prdct">
+                            <img src="assets/img/coupon/aarong.png" />
                           </div>
                         </div>
-                      </div>
+                      </td>
+                      <td>
+                        <p class="product-title">
+                          Aarong Summer sale offer upto 20% OFF With Coupon &
+                          Promo Codes
+                        </p>
+                      </td>
+                      <td>
+                        <div class="button-container">
+                          <button class="cart-qty-plus" type="button" value="+">
+                            +
+                          </button>
+                          <input
+                            type="text"
+                            name="qty"
+                            min="0"
+                            class="qty form-control"
+                            value="0"
+                          />
+                          <button
+                            class="cart-qty-minus"
+                            type="button"
+                            value="-"
+                          >
+                            -
+                          </button>
+                        </div>
+                      </td>
+                      <td>
+                        <input
+                          type="text"
+                          value="300"
+                          class="price form-control"
+                          disabled
+                        />
+                      </td>
+                      <td align="center">
+                        <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                        <span id="amount" class="amount">0</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="product-img">
+                          <div class="img-prdct">
+                            <img src="assets/img/coupon/aarong.png" />
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="product-title">
+                          Aarong Summer sale offer upto 20% OFF With Coupon &
+                          Promo Codes
+                        </p>
+                      </td>
+                      <td>
+                        <div class="button-container">
+                          <button class="cart-qty-plus" type="button" value="+">
+                            +
+                          </button>
+                          <input
+                            type="text"
+                            name="qty"
+                            min="0"
+                            class="qty form-control"
+                            value="0"
+                          />
+                          <button
+                            class="cart-qty-minus"
+                            type="button"
+                            value="-"
+                          >
+                            -
+                          </button>
+                        </div>
+                      </td>
+                      <td>
+                        <input
+                          type="text"
+                          value="33300"
+                          class="price form-control"
+                          disabled
+                        />
+                      </td>
+                      <td align="center">
+                        <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                        <span id="amount" class="amount">0</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td colspan="3"></td>
+                      <td colspan="2" align="right">
+                        <strong
+                          >TOTAL =
+                          <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                          <span id="total" class="total">0</span></strong
+                        >
+                      </td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="">
+                <h4
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
+                  <span class="text-muted">Your cart</span>
+                  <span class="badge badge-secondary badge-pill">3</span>
+                </h4>
+                <ul class="list-group mb-3">
+                  <li
+                    class="list-group-item d-flex justify-content-between lh-condensed"
+                  >
+                    <div>
+                      <h6 class="my-0">Product name</h6>
+                      <small class="text-muted">Product Quantity</small>
+                    </div>
+                    <span class="text-muted"
+                      ><i class="fa-solid fa-bangladeshi-taka-sign"></i>12</span
+                    >
+                  </li>
+                  <li
+                    class="list-group-item d-flex justify-content-between lh-condensed"
+                  >
+                    <div>
+                      <h6 class="my-0">Product name</h6>
+                      <small class="text-muted">Product Quantity</small>
+                    </div>
+                    <span class="text-muted"
+                      ><i class="fa-solid fa-bangladeshi-taka-sign"></i>8</span
+                    >
+                  </li>
+                  <li
+                    class="list-group-item d-flex justify-content-between lh-condensed"
+                  >
+                    <div>
+                      <h6 class="my-0">Product name</h6>
+                      <small class="text-muted">Product Quantity</small>
+                    </div>
+                    <span class="text-muted"
+                      ><i class="fa-solid fa-bangladeshi-taka-sign"></i>5</span
+                    >
+                  </li>
+
+                  <li
+                    class="list-group-item d-flex justify-content-between bg-light"
+                  >
+                    <div class="text-success">
+                      <h6 class="my-0">Promo code</h6>
+                      <small>EXAMPLECODE</small>
+                    </div>
+                    <span class="text-success"
+                      >-<i class="fa-solid fa-bangladeshi-taka-sign"></i>5</span
+                    >
+                  </li>
+
+                  <li class="list-group-item d-flex justify-content-between">
+                    <span>Total (TAKA)</span>
+                    <strong
+                      ><i class="fa-solid fa-bangladeshi-taka-sign"></i
+                      >20</strong
+                    >
+                  </li>
+                </ul>
+
+                <form class="card p-2">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Promo code"
+                    />
+                    <div class="input-group-append">
+                      <button type="submit" class="btn btn-secondary">
+                        Submit
+                      </button>
                     </div>
                   </div>
+                </form>
 
-                  <div class="py-5">
-                    <h5>Billing History</h5>
-                    <div class="card">
-                      <div class="card-body p-4">
-                        <div
-                          class="d-flex flex-column flex-md-row justify-content-between align-content-lg-center align-items-start pb-2"
-                        >
-                          <p style="font-size: 16px" class="mb-0">
-                            Md Nazvl Islam
-                          </p>
-                          <div>
-                            <a href="" class="text-primary">Billing History</a>
-                          </div>
-                        </div>
-                        <div
-                          class="d-flex flex-column flex-md-row justify-content-between align-content-lg-center align-items-start"
-                        >
-                          <p style="font-size: 16px" class="mb-0">
-                            nazvlislam@gmail.com
-                          </p>
-                          <div>
-                            <a href="" class="text-primary"
-                              >Modify Billing Information</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="pb-5">
-                    <h5>Payment Details</h5>
-                    <div class="card">
-                      <div class="card-body p-4">
-                        <div
-                          class="d-flex flex-column flex-md-row justify-content-between align-content-lg-center align-items-start pb-2"
-                        >
-                          <p style="font-size: 16px" class="mb-0">
-                            <i class="fa fa-credit-card"></i> ***********4562
-                          </p>
-                          <div>
-                            <a href="" class="text-primary">Payment History</a>
-                          </div>
-                        </div>
-                        <div
-                          class="d-flex flex-column flex-md-row justify-content-between align-content-lg-center align-items-start"
-                        >
-                          <p style="font-size: 16px" class="mb-0"></p>
-                          <div>
-                            <a href="" class="text-primary"
-                              >Update Billing Information</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="pt-4 text-center">
+                  <a href="checkout.html"
+                    ><button class="btn btn-success">
+                      Proceed to Checkout
+                    </button></a
+                  >
                 </div>
               </div>
             </div>
@@ -575,7 +725,7 @@
               <a href="home.html" class="pb-3 border-light logo">
                 <img src="assets/img/lebustore-white-logo.png" alt="" />
               </a>
-              <p class="pt-3 footer-info text-justify">
+              <p class="py-3 footer-info text-justify">
                 It might should like a fairytale but with lebustore it's nothing
                 but the truth! where you can save, share and shop to your
                 heart's content.
@@ -599,7 +749,7 @@
                   >
                 </li>
               </ul> -->
-              <p class="text-left footer-info">
+              <p class="text-left pt-4 footer-info">
                 Copyright &copy; 2024 Company Name | Designed by
                 <a
                   rel="sponsored"
@@ -737,7 +887,6 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
     <script src="assets/js/jquery-1.11.0.min.js"></script>
     <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>

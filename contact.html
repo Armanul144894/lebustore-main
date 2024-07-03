@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Lebustore- Contact</title>
+    <title>Lebustore-ContactUs</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -16,20 +16,28 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
 
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!-- Load fonts style after rendering the layout styles -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap"
     />
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
-
-    <!-- Load map styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-      crossorigin=""
     />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <script
+      src="https://kit.fontawesome.com/e09dd379d2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -59,7 +67,7 @@
             <div class="d-flex justify-content-center align-items-center gap-4">
               <a
                 class="text-dark text-decoration-none justify-content-center align-items-center d-flex gap-2 fs-6"
-                href="#"
+                href="wishlist.html"
                 target=""
                 rel="sponsored"
                 ><i class="fa-regular fa-heart fs-3"></i>My Wishlist</a
@@ -74,7 +82,7 @@
               >
               <a
                 class="text-dark text-decoration-none justify-content-center align-items-center d-flex gap-2 fs-6"
-                href="#"
+                href="my-cart.html"
                 target=""
                 rel="sponsored "
                 ><div class="position-relative">
@@ -172,16 +180,44 @@
       <!-- Header -->
       <nav style="background-color: #3b4837" class="navbar navbar-expand-lg">
         <div class="container d-flex align-items-center">
-          <a
-            class="navbar-brand text-success logo align-self-center d-block d-lg-none"
-            href="home.html"
-          >
+          <!-- <div class="d-flex justify-content-between align-items-center d-block d-lg-none">
+            <a
+              class="navbar-brand text-success logo align-self-center"
+              href="home.html"
+            >
             <img
-              src="assets/img/lebustore-white-logo.png"
-              class="img-fluid"
-              alt=""
-            />
-          </a>
+            src="assets/img/lebustore-white-logo.png"
+            class="img-fluid"
+            alt=""
+          />
+            </a>
+
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Categories</option>
+              <option value="Mens">Mens</option>
+              <option value="Womens">Womens</option>
+              <option value="Other">Others</option>
+            </select>
+          </div> -->
+          <div class="d-flex justify-content-between align-items-center d-block d-lg-none">
+            <a
+              class="navbar-brand text-success logo align-self-center"
+              href="home.html"
+            >
+            <img
+            src="assets/img/lebustore-white-logo.png"
+            class="img-fluid"
+            alt=""
+          />
+            </a>
+
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Categories</option>
+              <option value="Mens">Mens</option>
+              <option value="Womens">Womens</option>
+              <option value="Other">Others</option>
+            </select>
+          </div>
           <button
             class="navbar-toggler"
             type="button"
@@ -199,7 +235,7 @@
               class="navbar-nav mr-auto w-100 justify-content-start align-items-lg-center gap-md-0 gap-xl-4"
             >
               <li class="nav-item">
-                <a class="nav-link active" href="home.html">Discounts</a>
+                <a class="nav-link" href="home.html">Discounts</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Coupons</a>
@@ -214,7 +250,7 @@
                 <a class="nav-link" href="#">Partners</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacts</a>
+                <a class="nav-link active" href="contact.html">Contacts</a>
               </li>
               <li class="nav-item d-block d-lg-none">
                 <div class="dropdown">
@@ -362,36 +398,18 @@
       </div>
     </div>
 
-    <!-- Start Map -->
-    <div id="mapid" style="width: 100%; height: 300px"></div>
-    <script
-      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-      crossorigin=""
-    ></script>
-    <script>
-      var mymap = L.map("mapid").setView([-23.013104, -43.394365, 13], 13);
-
-      L.tileLayer(
-        "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw",
-        {
-          maxZoom: 18,
-
-          id: "mapbox/streets-v11",
-          tileSize: 512,
-          zoomOffset: -1,
-        }
-      ).addTo(mymap);
-
-      L.marker([-23.013104, -43.394365, 13])
-        .addTo(mymap)
-        .bindPopup("<b>Lebustore</b>")
-        .openPopup();
-
-      mymap.scrollWheelZoom.disable();
-      mymap.touchZoom.disable();
-    </script>
-    <!-- Ena Map -->
+    <div class="container mx-auto mt-5">
+      <div class="responsive-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.7806761080233!2d-93.29138368446431!3d44.96844997909819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32b6ee2c87c91%3A0xc20dff2748d2bd92!2sWalker+Art+Center!5e0!3m2!1sen!2sus!4v1514524647889"
+          width="100%"
+          height="450"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
 
     <!-- Start Contact -->
     <div class="container py-5">
@@ -464,28 +482,30 @@
       <div class="py-5">
         <div
           class="container p-5"
-          style="background-color: rgba(0, 0, 0, 0.85)"
+          style="background-color: rgba(24, 23, 23, 0.85)"
         >
           <div class="row text-light mb-4 align-items-center">
-            <div class="col-12 col-lg-6 me-auto">
-              <h2>Subscribe for the best deals!</h2>
-              <p class="text-muted">
+            <div class="col-12 col-lg-6 me-auto footer-info">
+              <h3 class="text-white fw-normal">
+                Subscribe for the best deals!
+              </h3>
+              <p class="footer-info">
                 Step into the world of online discount with us.
               </p>
             </div>
             <div class="col-12 col-lg-6">
               <label class="sr-only" for="subscribeEmail text-white"
-                >Email address</label
+                >Enter Email Address</label
               >
               <div class="input-group mb-2 position-relative">
                 <input
                   type="text"
-                  class="form-control bg-light border-light text-white rounded-pill px-4 py-2"
+                  class="form-control border-light text-white rounded-pill px-4 py-3"
                   id="subscribeEmail"
-                  placeholder="Email address"
+                  placeholder="Enter Email Address"
                 />
                 <div
-                  class="input-group-text subscribe-btn btn-success text-white fw-bold position-absolute rounded-pill px-3 px-md-5 py-2"
+                  class="input-group-text subscribe-btn btn-success text-white fw-bold position-absolute rounded-pill px-3 px-md-5 py-3"
                 >
                   Subscribe
                 </div>
@@ -498,14 +518,15 @@
 
           <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-5">
             <div class="col">
-              <a href="index.html" class="text-success pb-3 border-light logo">
-                <img src="assets/img/LebuStore.png" alt="" />
+              <a href="home.html" class="pb-3 border-light logo">
+                <img src="assets/img/lebustore-white-logo.png" alt="" />
               </a>
-              <p class="text-white py-3 footer-info text-justify">
+              <p class="py-3 footer-info text-justify">
                 It might should like a fairytale but with lebustore it's nothing
                 but the truth! where you can save, share and shop to your
                 heart's content.
               </p>
+
               <!-- <ul class="list-unstyled text-light footer-link-list">
                 <li>
                   <i class="fas fa-map-marker-alt fa-fw"></i>
@@ -524,7 +545,7 @@
                   >
                 </li>
               </ul> -->
-              <p class="text-left text-light pt-4">
+              <p class="text-left pt-4 footer-info">
                 Copyright &copy; 2024 Company Name | Designed by
                 <a
                   rel="sponsored"
@@ -536,43 +557,39 @@
             </div>
 
             <div class="col">
-              <h3 class="h3 text-light pb-3 border-light text-uppercase">
+              <h5 class="text-white pb-3 border-light text-uppercase">
                 Important Links
-              </h3>
-              <ul class="list-unstyled text-light footer-link-list">
+              </h5>
+              <ul class="list-unstyled footer-info footer-link-list">
                 <li>
-                  <a class="text-decoration-none" href="index.html">Home</a>
+                  <a class="text-decoration-none" href="home.html">Home</a>
                 </li>
                 <li>
                   <a class="text-decoration-none" href="about.html">About</a>
                 </li>
                 <li>
-                  <a class="text-decoration-none" href="shop.html">Discounts</a>
+                  <a class="text-decoration-none" href="#">Discounts</a>
                 </li>
                 <li>
-                  <a class="text-decoration-none" href="shop.html">Coupons</a>
+                  <a class="text-decoration-none" href="#">Coupons</a>
                 </li>
                 <li>
-                  <a class="text-decoration-none" href="product-details.html"
-                    >Offers</a
-                  >
+                  <a class="text-decoration-none" href="#">Offers</a>
                 </li>
                 <li>
                   <a class="text-decoration-none" href="#">Partners</a>
                 </li>
                 <li>
-                  <a class="text-decoration-none" href="contact.html"
-                    >Contacts</a
-                  >
+                  <a class="text-decoration-none" href="#">Contacts</a>
                 </li>
               </ul>
             </div>
 
             <div class="col">
-              <h3 class="h3 text-light pb-3 border-light text-uppercase">
+              <h5 class="text-white pb-3 border-light text-uppercase">
                 Categories
-              </h3>
-              <ul class="list-unstyled text-light footer-link-list">
+              </h5>
+              <ul class="list-unstyled footer-info footer-link-list">
                 <li>
                   <a class="text-decoration-none" href="#">Electronics</a>
                 </li>
@@ -593,12 +610,12 @@
               </ul>
             </div>
             <div class="col">
-              <h3 class="h3 text-light pb-3 border-light text-uppercase">
+              <h5 class="text-white pb-3 border-light text-uppercase">
                 Follow Us
-              </h3>
+              </h5>
               <ul class="list-inline text-left footer-icons">
                 <li
-                  class="list-inline-item border border-light rounded-circle text-center bg-warning"
+                  class="list-inline-item border border-light rounded-circle text-center bg-lightgreen"
                 >
                   <a
                     class="text-dark text-decoration-none"
@@ -608,7 +625,7 @@
                   ></a>
                 </li>
                 <li
-                  class="list-inline-item border border-light rounded-circle text-center bg-warning"
+                  class="list-inline-item border border-light rounded-circle text-center bg-lightgreen"
                 >
                   <a
                     class="text-dark text-decoration-none"
@@ -618,7 +635,7 @@
                   ></a>
                 </li>
                 <li
-                  class="list-inline-item border border-light rounded-circle text-center bg-warning"
+                  class="list-inline-item border border-light rounded-circle text-center bg-lightgreen"
                 >
                   <a
                     class="text-dark text-decoration-none"
@@ -628,7 +645,7 @@
                   ></a>
                 </li>
                 <li
-                  class="list-inline-item border border-light rounded-circle text-center bg-warning"
+                  class="list-inline-item border border-light rounded-circle text-center bg-lightgreen"
                 >
                   <a
                     class="text-dark text-decoration-none"
